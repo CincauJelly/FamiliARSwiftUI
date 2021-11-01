@@ -12,7 +12,7 @@
 		5123B30E27270CE400C91C4E /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B30D27270CE400C91C4E /* ExploreModel.swift */; };
 		5123B31027270D9800C91C4E /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B30F27270D9800C91C4E /* ExploreViewModel.swift */; };
 		5123B31227278FEF00C91C4E /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B31127278FEF00C91C4E /* ExploreSelections.swift */; };
-		5123B3152727C02800C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3142727C02800C91C4E /* Macro.rcproject */; };
+		5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B316272FB00A00C91C4E /* Macro.rcproject */; };
 		514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */; };
 		514B335C2726A85F00FB011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B335B2726A85F00FB011D /* ContentView.swift */; };
 		514B335E2726A86100FB011D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514B335D2726A86100FB011D /* Assets.xcassets */; };
@@ -46,7 +46,7 @@
 		5123B30D27270CE400C91C4E /* ExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
 		5123B30F27270D9800C91C4E /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		5123B31127278FEF00C91C4E /* ExploreSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSelections.swift; sourceTree = "<group>"; };
-		5123B3142727C02800C91C4E /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
+		5123B316272FB00A00C91C4E /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
 		514B33562726A85F00FB011D /* FamiliARSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamiliARSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIApp.swift; sourceTree = "<group>"; };
 		514B335B2726A85F00FB011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		5123B3132727BA0B00C91C4E /* AssetAR */ = {
 			isa = PBXGroup;
 			children = (
-				5123B3142727C02800C91C4E /* Macro.rcproject */,
+				5123B316272FB00A00C91C4E /* Macro.rcproject */,
 			);
 			path = AssetAR;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 				514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */,
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
-				5123B3152727C02800C91C4E /* Macro.rcproject in Sources */,
+				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
 				5123B31027270D9800C91C4E /* ExploreViewModel.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
@@ -486,7 +486,7 @@
 				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -508,7 +508,7 @@
 				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
