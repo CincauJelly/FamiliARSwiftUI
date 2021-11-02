@@ -97,17 +97,40 @@ struct SimulationView: View {
             VStack{
                 Text("Instruction")
                     .padding()
-                ForEach((1...5), id: \.self) {
-                        Text("Step \($0)…")
+                    .foregroundColor(Color.red)
+                ForEach((1...5), id: \.self){i in
+                    HStack{
+                        Text("Step \(i)")
                             .padding()
-                            .background(Color(.red))
-                        Image(systemName: "checkmark.circle")
+                            .foregroundColor(Color.white)
+                            .frame(width: 300, alignment: .leading)
+                            .background(Color.red.opacity(0.6))
+                            .cornerRadius(15)
+                        Image(systemName: "checkmark.circle.fill")
+                            .padding()
+                            .foregroundColor(Color.white)
+                            .frame(width: 50)
+                    }
                 }
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
-            .background(Color(.gray))
-            .offset(x: 0, y: 0)
-            .frame(width: 200, height: 150, alignment: .leading)
+            .padding()
+            .background(Color.gray.opacity(0.4))
+            .cornerRadius(15)
+            .position(x: -250, y: -120)
+            .frame(width: 250, height: 150, alignment: .leading)
+            
+            Text("00.00")
+                .padding()
+                .background(Color.white.opacity(0.0))
+                .cornerRadius(15)
+                .position(x: 600, y: -350)
+                .frame(width: 100, height: 50, alignment: .leading)
+            
+            Image(systemName: "speaker.fill")
+                .foregroundColor(Color.white)
+                .font(.system(size: 48))
+                .position(x: 0, y: 380)
+                .frame(width: 50, height: 50, alignment: .center)
         }
     }
 }
