@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F7172C22732D38000A250DF /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 3F7172C12732D38000A250DF /* Model */; };
-		3F7172C42732D41400A250DF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3F7172C32732D41400A250DF /* .gitignore */; };
 		5123B3062726FD3F00C91C4E /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3052726FD3F00C91C4E /* ExploreView.swift */; };
 		5123B3082727034900C91C4E /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3072727034900C91C4E /* SimulationView.swift */; };
 		5123B30E27270CE400C91C4E /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B30D27270CE400C91C4E /* ExploreModel.swift */; };
@@ -16,7 +14,6 @@
 		5123B31227278FEF00C91C4E /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B31127278FEF00C91C4E /* ExploreSelections.swift */; };
 		5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B316272FB00A00C91C4E /* Macro.rcproject */; };
 		5123B357273025A500C91C4E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5123B356273025A500C91C4E /* FocusEntity */; };
-		5123B35927302A6300C91C4E /* Macros.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5123B35827302A6300C91C4E /* Macros.usdz */; };
 		514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */; };
 		514B335C2726A85F00FB011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B335B2726A85F00FB011D /* ContentView.swift */; };
 		514B335E2726A86100FB011D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514B335D2726A86100FB011D /* Assets.xcassets */; };
@@ -45,15 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F7172C12732D38000A250DF /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Model; sourceTree = "<group>"; };
-		3F7172C32732D41400A250DF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = FamiliARSwiftUI/.gitignore; sourceTree = SOURCE_ROOT; };
 		5123B3052726FD3F00C91C4E /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		5123B3072727034900C91C4E /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		5123B30D27270CE400C91C4E /* ExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
 		5123B30F27270D9800C91C4E /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		5123B31127278FEF00C91C4E /* ExploreSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSelections.swift; sourceTree = "<group>"; };
 		5123B316272FB00A00C91C4E /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
-		5123B35827302A6300C91C4E /* Macros.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Macros.usdz; sourceTree = "<group>"; };
 		514B33562726A85F00FB011D /* FamiliARSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamiliARSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIApp.swift; sourceTree = "<group>"; };
 		514B335B2726A85F00FB011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,8 +103,6 @@
 		5123B30B27270C9700C91C4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3F7172C32732D41400A250DF /* .gitignore */,
-				3F7172C12732D38000A250DF /* Model */,
 				5123B30D27270CE400C91C4E /* ExploreModel.swift */,
 			);
 			path = Model;
@@ -127,7 +119,6 @@
 		5123B3132727BA0B00C91C4E /* AssetAR */ = {
 			isa = PBXGroup;
 			children = (
-				5123B35827302A6300C91C4E /* Macros.usdz */,
 				5123B316272FB00A00C91C4E /* Macro.rcproject */,
 			);
 			path = AssetAR;
@@ -306,10 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F7172C42732D41400A250DF /* .gitignore in Resources */,
 				514B33612726A86100FB011D /* Preview Assets.xcassets in Resources */,
-				5123B35927302A6300C91C4E /* Macros.usdz in Resources */,
-				3F7172C22732D38000A250DF /* Model in Resources */,
 				514B335E2726A86100FB011D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,7 +491,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 43GD4RTJWG;
+				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -525,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 43GD4RTJWG;
+				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
