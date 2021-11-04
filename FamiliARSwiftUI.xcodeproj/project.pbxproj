@@ -22,6 +22,7 @@
 		514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 514B33642726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld */; };
 		514B33712726A86200FB011D /* FamiliARSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33702726A86200FB011D /* FamiliARSwiftUITests.swift */; };
 		514B337C2726A86200FB011D /* FamiliARSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B337B2726A86200FB011D /* FamiliARSwiftUIUITests.swift */; };
+		514E5D6127338E9000B84A92 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514E5D6027338E9000B84A92 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		514B33772726A86200FB011D /* FamiliARSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiliARSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		514B337B2726A86200FB011D /* FamiliARSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIUITests.swift; sourceTree = "<group>"; };
 		514B337D2726A86200FB011D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		514E5D6027338E9000B84A92 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				5123B3052726FD3F00C91C4E /* ExploreView.swift */,
 				5123B31127278FEF00C91C4E /* ExploreSelections.swift */,
 				5123B3072727034900C91C4E /* SimulationView.swift */,
+				514E5D6027338E9000B84A92 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
 				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
+				514E5D6127338E9000B84A92 /* HomeView.swift in Sources */,
 				5123B31027270D9800C91C4E /* ExploreViewModel.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
 				5123B3062726FD3F00C91C4E /* ExploreView.swift in Sources */,
@@ -491,7 +495,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7CG3SG3HTX;
+				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -513,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7CG3SG3HTX;
+				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
