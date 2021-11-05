@@ -14,7 +14,6 @@ struct HomeView: View {
             Image(uiImage: UIImage(named: "placeholderImage")!)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             VStack{
-                
                 Button("Start Simulation", action: {
                     print("Start simulation")
                 })
@@ -25,12 +24,10 @@ struct HomeView: View {
                 ScrollView(.horizontal){
                     HStack{
                         ForEach ((0..<5), id: \.self){i in
-                            Button("Simulation 1", action: {
-                                print("selected \(i)")
-                            })
-                                .padding()
-                                .background(Color.red)
-                                .clipShape(Capsule())
+                            NavigationLink(destination: SimulationView()){
+                                Text("Item \(i)")
+                            }
+                            
                         }
                         .padding()
                     }
