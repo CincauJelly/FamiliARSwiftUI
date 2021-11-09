@@ -12,7 +12,7 @@ struct GuidanceView: View {
     var body: some View {
         ZStack(){
             Color("Color Secondary 2").ignoresSafeArea()
-            Image("select learningsimulation")
+            Image("Select Learning")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .opacity(0.1)
