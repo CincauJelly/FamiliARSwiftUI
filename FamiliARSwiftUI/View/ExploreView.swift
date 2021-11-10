@@ -7,9 +7,9 @@
 
 import Foundation
 import SwiftUI
+import RealityKit
 
 struct ExploreView: View {
-    
     let data = (1...6).map { "Item \($0)" }
 
     let columns = [
@@ -17,20 +17,30 @@ struct ExploreView: View {
     ]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(data, id: \.self) { item in
-                    ExploreSelection()
-                }
+        ZStack{
+            Color("Color Secondary 2").ignoresSafeArea()
+            VStack{
+                Text("Explore First Aid")
+                    .padding()
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            ExploreSelection(title: "Explore Pages \(item)", image: "Puncture")
+                        }
+                    }
+                    .padding(.horizontal)
+                    .frame(maxWidth: 700, maxHeight: 500)
+
+                
             }
-            .padding(.horizontal)
+            .frame(alignment: .top)
         }
-        .frame(maxHeight: 500)
+        
     }
 }
 
 struct ExploreView_Previews: PreviewProvider {
     static var previews: some View {
         ExploreView()
+.previewInterfaceOrientation(.landscapeRight)
     }
 }

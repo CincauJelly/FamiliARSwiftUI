@@ -17,7 +17,7 @@ struct ContentView: View {
                 }
                 .navigationTitle("FamiliAR")
             }
-            HomeView()
+            ExploreView()
         }
         .navigationBarHidden(true)
         .navigationBarTitle(Text("Home"))

@@ -21,14 +21,14 @@ struct RealityKitView: UIViewRepresentable {
         config.planeDetection = [.horizontal]
         session.run(config)
 
-                // Add coaching overlay
+        // Add coaching overlay
         let coachingOverlay = ARCoachingOverlayView()
         coachingOverlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         coachingOverlay.session = session
         coachingOverlay.goal = .horizontalPlane
         view.addSubview(coachingOverlay)
 
-                // Set debug options
+        // Set debug options
         #if DEBUG
         view.debugOptions = [.showFeaturePoints, .showAnchorOrigins, .showAnchorGeometry]
         #endif
@@ -138,6 +138,6 @@ struct SimulationView: View {
 struct SimulationView_Previews: PreviewProvider {
     static var previews: some View {
         SimulationView()
-.previewInterfaceOrientation(.landscapeRight)
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
