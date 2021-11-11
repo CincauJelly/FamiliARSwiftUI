@@ -22,8 +22,8 @@ struct ExploreView: View {
             Color("Color Secondary 2").ignoresSafeArea()
             VStack{
                 Text("Explore First Aid")
-                    .font(.custom("Product Sans Regular", size: 33))
-                    .foregroundColor(Color("Color Secondary 2"))
+                    .font(.system(size: 33))
+                    .foregroundColor(Color("Color Primary"))
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(items, id: \.self) { item in
                         ExploreSelection(title: "\(item)", image: "\(item)")

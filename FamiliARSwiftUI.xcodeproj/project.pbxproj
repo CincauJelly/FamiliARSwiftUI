@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		512066D3273CCA4500B1E930 /* StepComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066D2273CCA4500B1E930 /* StepComponentView.swift */; };
 		5123B3062726FD3F00C91C4E /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3052726FD3F00C91C4E /* ExploreView.swift */; };
 		5123B3082727034900C91C4E /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3072727034900C91C4E /* SimulationView.swift */; };
 		5123B31227278FEF00C91C4E /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B31127278FEF00C91C4E /* ExploreSelections.swift */; };
@@ -23,9 +24,7 @@
 		8773D942273A320F005165D9 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8773D941273A320F005165D9 /* PracticeView.swift */; };
 		8798CED627367E2A0015526C /* GuidancePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8798CED527367E2A0015526C /* GuidancePage.swift */; };
 		87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF55BA273B7418002B245D /* StopWatchManager.swift */; };
-		ECD3B1D02738D0EF00130C38 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1CF2738D0EF00130C38 /* StepView.swift */; };
 		ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */; };
-		ECD3B1D22739F62F00130C38 /* StepComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1D12739F62F00130C38 /* StepComponentView.swift */; };
 		ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1D4273CB21500130C38 /* SprainStepView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		512066D2273CCA4500B1E930 /* StepComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepComponentView.swift; sourceTree = "<group>"; };
 		5123B3052726FD3F00C91C4E /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		5123B3072727034900C91C4E /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		5123B31127278FEF00C91C4E /* ExploreSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSelections.swift; sourceTree = "<group>"; };
@@ -68,9 +68,7 @@
 		8773D941273A320F005165D9 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		8798CED527367E2A0015526C /* GuidancePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidancePage.swift; sourceTree = "<group>"; };
 		87BF55BA273B7418002B245D /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
-		ECD3B1CF2738D0EF00130C38 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureStepView.swift; sourceTree = "<group>"; };
-		ECD3B1D12739F62F00130C38 /* StepComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepComponentView.swift; sourceTree = "<group>"; };
 		ECD3B1D4273CB21500130C38 /* SprainStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprainStepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,10 +108,9 @@
 				8798CED527367E2A0015526C /* GuidancePage.swift */,
 				8773D941273A320F005165D9 /* PracticeView.swift */,
 				87BF55BA273B7418002B245D /* StopWatchManager.swift */,
-				ECD3B1CF2738D0EF00130C38 /* StepView.swift */,
-				ECD3B1D12739F62F00130C38 /* StepComponentView.swift */,
 				ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */,
 				ECD3B1D4273CB21500130C38 /* SprainStepView.swift */,
+				512066D2273CCA4500B1E930 /* StepComponentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,7 +118,6 @@
 		5123B30B27270C9700C91C4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				519E747F273B90D5009911D5 /* ExploreModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,7 +204,6 @@
 		ECD3B1D3273B85A600130C38 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				ECD3B1D12739F62F00130C38 /* StepComponentView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -348,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512066D3273CCA4500B1E930 /* StepComponentView.swift in Sources */,
 				ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */,
 				514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */,
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
@@ -357,11 +353,8 @@
 				87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */,
 				ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
-				5123B31027270D9800C91C4E /* ExploreViewModel.swift in Sources */,
 				8773D942273A320F005165D9 /* PracticeView.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
-				519E747E273B71D6009911D5 /* ExploreSteps.swift in Sources */,
-				ECD3B1D22739F62F00130C38 /* StepComponentView.swift in Sources */,
 				5123B3062726FD3F00C91C4E /* ExploreView.swift in Sources */,
 				5123B31227278FEF00C91C4E /* ExploreSelections.swift in Sources */,
 			);
@@ -523,7 +516,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 25T7L593ZA;
+				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -547,7 +540,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 25T7L593ZA;
+				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
