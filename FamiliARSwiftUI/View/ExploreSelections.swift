@@ -19,12 +19,12 @@ struct ExploreSelection: View {
     }
     
     var body: some View {
-        NavigationLink(destination: ExploreSteps(explore: itemTitle)){
+//        NavigationLink(destination: ExploreSteps(explore: itemTitle)){
             Image(itemImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 200, height: 200, alignment: .center)
-        }
+//        }
     }
 }
 struct ExploreSelection_Previews: PreviewProvider {
