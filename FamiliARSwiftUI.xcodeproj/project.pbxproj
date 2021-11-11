@@ -24,7 +24,9 @@
 		8798CED627367E2A0015526C /* GuidancePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8798CED527367E2A0015526C /* GuidancePage.swift */; };
 		87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF55BA273B7418002B245D /* StopWatchManager.swift */; };
 		ECD3B1D02738D0EF00130C38 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1CF2738D0EF00130C38 /* StepView.swift */; };
+		ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */; };
 		ECD3B1D22739F62F00130C38 /* StepComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1D12739F62F00130C38 /* StepComponentView.swift */; };
+		ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1D4273CB21500130C38 /* SprainStepView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +69,9 @@
 		8798CED527367E2A0015526C /* GuidancePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidancePage.swift; sourceTree = "<group>"; };
 		87BF55BA273B7418002B245D /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
 		ECD3B1CF2738D0EF00130C38 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureStepView.swift; sourceTree = "<group>"; };
 		ECD3B1D12739F62F00130C38 /* StepComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepComponentView.swift; sourceTree = "<group>"; };
+		ECD3B1D4273CB21500130C38 /* SprainStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprainStepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		5123B3002726C24000C91C4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECD3B1D3273B85A600130C38 /* Component */,
 				5123B3052726FD3F00C91C4E /* ExploreView.swift */,
 				5123B31127278FEF00C91C4E /* ExploreSelections.swift */,
 				5123B3072727034900C91C4E /* SimulationView.swift */,
@@ -107,6 +112,8 @@
 				87BF55BA273B7418002B245D /* StopWatchManager.swift */,
 				ECD3B1CF2738D0EF00130C38 /* StepView.swift */,
 				ECD3B1D12739F62F00130C38 /* StepComponentView.swift */,
+				ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */,
+				ECD3B1D4273CB21500130C38 /* SprainStepView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +203,14 @@
 				514B337D2726A86200FB011D /* Info.plist */,
 			);
 			path = FamiliARSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		ECD3B1D3273B85A600130C38 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3B1D12739F62F00130C38 /* StepComponentView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,13 +348,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD3B1D02738D0EF00130C38 /* StepView.swift in Sources */,
+				ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */,
 				514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */,
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
 				8798CED627367E2A0015526C /* GuidancePage.swift in Sources */,
 				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
 				87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */,
+				ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
 				5123B31027270D9800C91C4E /* ExploreViewModel.swift in Sources */,
 				8773D942273A320F005165D9 /* PracticeView.swift in Sources */,
