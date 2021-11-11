@@ -9,24 +9,26 @@ import Foundation
 import SwiftUI
 
 struct ExploreSelection: View {
+    
+    let itemTitle: String
+    let itemImage: String
+    
+    init(title: String, image: String){
+        self.itemTitle = title
+        self.itemImage = image
+    }
+    
     var body: some View {
-        ZStack{
-            Image("placeholderImage")
+//        NavigationLink(destination: ExploreSteps(explore: itemTitle)){
+            Image(itemImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .opacity(0.2)
-                .frame(width: 150, height: 150, alignment: .center)
-                .padding()
-            Text("Explore Page")
-                .foregroundColor(.white)
-                .padding()
-        }
-        .background(Color(.red))
-        .frame(width: 190, height: 190, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 200, height: 200, alignment: .center)
+//        }
     }
 }
 struct ExploreSelection_Previews: PreviewProvider {
     static var previews: some View {
-        ExploreSelection()
+        ExploreSelection(title: "Puncture", image: "Puncture")
     }
 }

@@ -10,13 +10,24 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-            SimulationView()
-        
+        NavigationView{
+            VStack{
+                NavigationLink(destination: SimulationView()){
+                    Text("Practice")
+                }
+                .navigationTitle("FamiliAR")
+            }
+            ExploreView()
+        }
+        .navigationBarHidden(true)
+        .navigationBarTitle(Text("Home"))
+        .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
