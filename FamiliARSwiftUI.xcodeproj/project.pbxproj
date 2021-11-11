@@ -21,6 +21,7 @@
 		514B33712726A86200FB011D /* FamiliARSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33702726A86200FB011D /* FamiliARSwiftUITests.swift */; };
 		514B337C2726A86200FB011D /* FamiliARSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B337B2726A86200FB011D /* FamiliARSwiftUIUITests.swift */; };
 		519E747E273B71D6009911D5 /* ExploreSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E747D273B71D6009911D5 /* ExploreSteps.swift */; };
+		519E7480273B90D5009911D5 /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E747F273B90D5009911D5 /* ExploreModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		514B337B2726A86200FB011D /* FamiliARSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIUITests.swift; sourceTree = "<group>"; };
 		514B337D2726A86200FB011D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		519E747D273B71D6009911D5 /* ExploreSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSteps.swift; sourceTree = "<group>"; };
+		519E747F273B90D5009911D5 /* ExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExploreModel.swift; path = FamiliARSwiftUI/View/ExploreModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		5123B30B27270C9700C91C4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				519E747F273B90D5009911D5 /* ExploreModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
 				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
+				519E7480273B90D5009911D5 /* ExploreModel.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
 				519E747E273B71D6009911D5 /* ExploreSteps.swift in Sources */,
 				5123B3062726FD3F00C91C4E /* ExploreView.swift in Sources */,

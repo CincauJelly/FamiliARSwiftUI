@@ -11,6 +11,7 @@ import RealityKit
 
 struct ExploreView: View {
     let data = (1...6).map { "Item \($0)" }
+    let items = ["Puncture","Sprain","Asthma","NoseBleed","Choking","BeeStings"]
 
     let columns = [
         GridItem(.adaptive(minimum: 190))
@@ -21,12 +22,13 @@ struct ExploreView: View {
             Color("Color Secondary 2").ignoresSafeArea()
             VStack{
                 Text("Explore First Aid")
-                    .padding()
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(data, id: \.self) { item in
-                            ExploreSelection(title: "Explore Pages \(item)", image: "Puncture")
-                        }
+                    .font(.custom("Product Sans Regular", size: 33))
+                    .foregroundColor(<#T##color: Color?##Color?#>)
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(items, id: \.self) { item in
+                        ExploreSelection(title: "\(item)", image: "\(item)")
                     }
+                }
                     .padding(.horizontal)
                     .frame(maxWidth: 700, maxHeight: 500)
 
