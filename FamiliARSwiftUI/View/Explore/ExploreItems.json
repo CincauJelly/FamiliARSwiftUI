@@ -1,0 +1,12 @@
+{
+  "1": {
+    "id": 1,
+    "title": "Puncture",
+    "image": "Puncture"
+  },
+  "2": {
+    "id": 2,
+    "title": "Sprain",
+    "image": "Sprain"
+  }
+}
