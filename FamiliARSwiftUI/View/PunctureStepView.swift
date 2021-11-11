@@ -20,7 +20,7 @@ struct PunctureStepView: View {
             Color(#colorLiteral(red: 255, green: 246, blue: 243, alpha: 1)).ignoresSafeArea()
             NavigationView {
                 VStack{
-                    StepComponentView(descrition: "Wash your hands. This helps prevent infection.", imageName: "Puncture_Step1")
+                    StepComponentView(title: "Puncture", descrition: "Wash your hands. This helps prevent infection.", imageName: "Puncture_Step1")
                     HStack(spacing: 120) {
                         PrevNavigationView().opacity(0)
                         Text("1/6")
@@ -45,7 +45,7 @@ struct Step2View: View {
     
     var body: some View {
         VStack{
-            StepComponentView(descrition: "Stop the bleeding. Apply gentle pressure with a clean bandage or cloth", imageName: "Puncture_Step2")
+            StepComponentView(title: "Puncture", descrition: "Stop the bleeding. Apply gentle pressure with a clean bandage or cloth", imageName: "Puncture_Step2")
             HStack(spacing: 120) {
                 Button(action: {
                     self.presentation.wrappedValue.dismiss()
@@ -70,7 +70,7 @@ struct Step3View: View {
     
     var body: some View {
         VStack{
-            StepComponentView(descrition: "Rinse the wound with clear water for 5 to 10 minutes. If dirt or debris remains in the wound, use a washcloth to gently scrub it off. See a doctor if you can't remove all of the dirt or debris.", imageName: "Puncture_Step3")
+            StepComponentView(title: "Puncture", descrition: "Rinse the wound with clear water for 5 to 10 minutes. If dirt or debris remains in the wound, use a washcloth to gently scrub it off. See a doctor if you can't remove all of the dirt or debris.", imageName: "Puncture_Step3")
             HStack(spacing: 120) {
                 Button(action: {
                     self.presentation.wrappedValue.dismiss()
@@ -95,7 +95,7 @@ struct Step4View: View {
     
     var body: some View {
         VStack{
-            StepComponentView(descrition: "Apply a thin layer of an antibiotic cream. Rewash the area and reapply the antibiotic when you change the dressing. If there is an allergic reaction, stop using the product.", imageName: "Puncture_Step4")
+            StepComponentView(title: "Puncture", descrition: "Apply a thin layer of an antibiotic cream. Rewash the area and reapply the antibiotic when you change the dressing. If there is an allergic reaction, stop using the product.", imageName: "Puncture_Step4")
             HStack(spacing: 120) {
                 Button(action: {
                     self.presentation.wrappedValue.dismiss()
@@ -120,7 +120,7 @@ struct Step5View: View {
     
     var body: some View {
         VStack{
-            StepComponentView(descrition: "Cover the wound. Bandages help keep the wound clean.", imageName: "Puncture_Step5")
+            StepComponentView(title: "Puncture", descrition: "Cover the wound. Bandages help keep the wound clean.", imageName: "Puncture_Step5")
             HStack(spacing: 120) {
                 Button(action: {
                     self.presentation.wrappedValue.dismiss()
@@ -145,7 +145,7 @@ struct Step6View: View {
     
     var body: some View {
         VStack{
-            StepComponentView(descrition: "Change the dressing. Do this daily or whenever the bandage becomes wet or dirty.", imageName: "Puncture_Step6")
+            StepComponentView(title: "Puncture", descrition: "Change the dressing. Do this daily or whenever the bandage becomes wet or dirty.", imageName: "Puncture_Step6")
             HStack(spacing: 120) {
                 Button(action: {
                     self.presentation.wrappedValue.dismiss()

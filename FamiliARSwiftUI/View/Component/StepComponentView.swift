@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct StepComponentView: View {
+    var title: String
     var descrition = ""
     var imageName: String
     var step = ""
+    
     
     var body: some View {
         VStack {
@@ -26,7 +28,7 @@ struct StepComponentView: View {
                 .cornerRadius(10)
                 .opacity(descrition == "" ? 0 : 1)
         }
-        .navigationBarTitle("Puncture", displayMode: .inline)
+        .navigationBarTitle("\(title)", displayMode: .inline)
         .offset(y: -60)
     }
 }
@@ -55,7 +57,7 @@ struct NextNavigationView: View {
 
 struct StepComponentView_Previews: PreviewProvider {
     static var previews: some View {
-        StepComponentView(descrition: "Test", imageName: "Puncture_Step4")
+        StepComponentView(title: "Puncture", descrition: "Test", imageName: "Puncture_Step4")
 .previewInterfaceOrientation(.landscapeRight)
     }
 }
