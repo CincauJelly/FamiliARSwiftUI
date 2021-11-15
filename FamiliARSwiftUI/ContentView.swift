@@ -24,7 +24,10 @@ struct ContentView: View {
                     Text("Practice")
                         .padding()
                 }
-        
+                NavigationLink(destination: ExampleView()){
+                    Text("Testing")
+                        .padding()
+                }
                 .navigationTitle("FamiliAR")
                 .frame(alignment: .top)
             }

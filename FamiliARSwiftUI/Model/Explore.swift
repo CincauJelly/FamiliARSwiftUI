@@ -8,7 +8,15 @@
 import Foundation
 
 struct Explore: Codable, Identifiable {
-    var id: Int
-    var title: String
-    var image: String
+    let id: String
+    let title: String
+    let description: String
+    
+    var displayTitle: String {
+        "\(title)"
+    }
+    
+    var thumbnail: String {
+        "\(description)"
+    }
 }

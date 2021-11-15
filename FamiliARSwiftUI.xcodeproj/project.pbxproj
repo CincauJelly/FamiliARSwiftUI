@@ -12,6 +12,12 @@
 		512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066E82741FD8800B1E930 /* ExploreItems.json */; };
 		512066EB2741FD8800B1E930 /* ExploreSteps.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066E92741FD8800B1E930 /* ExploreSteps.json */; };
 		512066ED2742029300B1E930 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066EC2742029300B1E930 /* Explore.swift */; };
+		512066EF2742B1F700B1E930 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066EE2742B1F700B1E930 /* ExampleView.swift */; };
+		512066F12742B38E00B1E930 /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066F02742B38E00B1E930 /* Items.json */; };
+		512066F32742B62800B1E930 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F22742B62800B1E930 /* Bundle-Decodable.swift */; };
+		512066F52742BF8E00B1E930 /* Steps.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066F42742BF8E00B1E930 /* Steps.json */; };
+		512066F72742C14C00B1E930 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F62742C14C00B1E930 /* Step.swift */; };
+		512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F82742CE7000B1E930 /* ExampleStep.swift */; };
 		5123B3082727034900C91C4E /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3072727034900C91C4E /* SimulationView.swift */; };
 		5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B316272FB00A00C91C4E /* Macro.rcproject */; };
 		5123B357273025A500C91C4E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5123B356273025A500C91C4E /* FocusEntity */; };
@@ -58,6 +64,12 @@
 		512066E82741FD8800B1E930 /* ExploreItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ExploreItems.json; path = FamiliARSwiftUI/View/Explore/ExploreItems.json; sourceTree = SOURCE_ROOT; };
 		512066E92741FD8800B1E930 /* ExploreSteps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ExploreSteps.json; path = FamiliARSwiftUI/View/Explore/ExploreSteps.json; sourceTree = SOURCE_ROOT; };
 		512066EC2742029300B1E930 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
+		512066EE2742B1F700B1E930 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		512066F02742B38E00B1E930 /* Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
+		512066F22742B62800B1E930 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		512066F42742BF8E00B1E930 /* Steps.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Steps.json; sourceTree = "<group>"; };
+		512066F62742C14C00B1E930 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		512066F82742CE7000B1E930 /* ExampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStep.swift; sourceTree = "<group>"; };
 		5123B3072727034900C91C4E /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		5123B316272FB00A00C91C4E /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
 		514B33562726A85F00FB011D /* FamiliARSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamiliARSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +129,8 @@
 			children = (
 				512066E82741FD8800B1E930 /* ExploreItems.json */,
 				512066E92741FD8800B1E930 /* ExploreSteps.json */,
+				512066F02742B38E00B1E930 /* Items.json */,
+				512066F42742BF8E00B1E930 /* Steps.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -146,6 +160,10 @@
 			children = (
 				512066E72741FD5C00B1E930 /* Data */,
 				512066EC2742029300B1E930 /* Explore.swift */,
+				512066F62742C14C00B1E930 /* Step.swift */,
+				512066EE2742B1F700B1E930 /* ExampleView.swift */,
+				512066F22742B62800B1E930 /* Bundle-Decodable.swift */,
+				512066F82742CE7000B1E930 /* ExampleStep.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,8 +364,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512066F12742B38E00B1E930 /* Items.json in Resources */,
 				514B33612726A86100FB011D /* Preview Assets.xcassets in Resources */,
 				514B335E2726A86100FB011D /* Assets.xcassets in Resources */,
+				512066F52742BF8E00B1E930 /* Steps.json in Resources */,
 				512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */,
 				512066EB2741FD8800B1E930 /* ExploreSteps.json in Resources */,
 			);
@@ -379,11 +399,14 @@
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
 				EC25ACC02741D35700480063 /* AsthmaStepView.swift in Sources */,
+				512066F32742B62800B1E930 /* Bundle-Decodable.swift in Sources */,
 				EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */,
 				512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */,
 				8798CED627367E2A0015526C /* GuidancePage.swift in Sources */,
 				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
+				512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */,
 				EC25ACC42741D6CF00480063 /* ChokingStepView.swift in Sources */,
+				512066F72742C14C00B1E930 /* Step.swift in Sources */,
 				87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */,
 				ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
@@ -393,6 +416,7 @@
 				EC25ACBE2741D27A00480063 /* StepComponentView.swift in Sources */,
 				512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */,
 				512066ED2742029300B1E930 /* Explore.swift in Sources */,
+				512066EF2742B1F700B1E930 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
