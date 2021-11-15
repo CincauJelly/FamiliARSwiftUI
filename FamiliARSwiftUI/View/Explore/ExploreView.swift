@@ -10,7 +10,10 @@ import SwiftUI
 import RealityKit
 
 struct ExploreView: View {
-    let data = (1...6).map { "Item \($0)" }
+    
+//    let exploreItems: [ExploreItems] = Bundle.main.decode("ExploreItems.json")
+//    let exploreSteps: [ExploreSteps] = Bundle.main.decode("ExploreSteps.json")
+    
     let items = ["Puncture","Sprain","Asthma","NoseBleed","Choking","BeeStings"]
 
     let columns = [
@@ -22,11 +25,11 @@ struct ExploreView: View {
             Color("Color Secondary 2").ignoresSafeArea()
             VStack{
                 Text("Explore First Aid")
-                    .font(.custom("Product Sans Regular", size: 33))
-                    .foregroundColor(Color("Color Secondary 2"))
+                    .font(.system(size: 33))
+                    .foregroundColor(Color("Color Primary"))
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(items, id: \.self) { item in
-                        ExploreSelection(title: "\(item)", image: "\(item)")
+                    ForEach(items, id: \.self) { items in
+                        ExploreSelection(title: "\(items)", image: "\(items)")
                     }
                 }
                     .padding(.horizontal)

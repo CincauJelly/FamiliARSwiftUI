@@ -12,10 +12,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack{
-                NavigationLink(destination: SimulationView()){
-                    Text("Practice")
+                NavigationLink(destination: GuidanceView()){
+                    Text("Learning Simulation")
+                        .padding()
                 }
+                NavigationLink(destination: ExploreView()){
+                    Text("Explore First Aid")
+                        .padding()
+                }
+                NavigationLink(destination: PracticeView()){
+                    Text("Practice")
+                        .padding()
+                }
+        
                 .navigationTitle("FamiliAR")
+                .frame(alignment: .top)
             }
             ExploreView()
         }
