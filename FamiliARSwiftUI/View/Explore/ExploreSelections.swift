@@ -28,7 +28,35 @@ struct ExploreSelection: View {
                     .frame(width: 200, height: 200, alignment: .center)
             }
         case "Sprain":
-            NavigationLink(destination: PunctureStepView()){
+            NavigationLink(destination: SprainStepView()){
+                Image(itemImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: .center)
+            }
+        case "Asthma":
+            NavigationLink(destination: AstmaStepView()){
+                Image(itemImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: .center)
+            }
+        case "NoseBleed":
+            NavigationLink(destination: NoseBleedStepView()){
+                Image(itemImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: .center)
+            }
+        case "Choking":
+            NavigationLink(destination: ChokingStepView()){
+                Image(itemImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: .center)
+            }
+        case "BeeStings":
+            NavigationLink(destination: BeeAndStingsStepView()){
                 Image(itemImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)

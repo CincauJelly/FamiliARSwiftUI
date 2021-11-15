@@ -8,5 +8,25 @@
     "id": 2,
     "title": "Sprain",
     "image": "Sprain"
+  },
+  {
+    "id": 3,
+    "title": "Asthma",
+    "image": "Asthma"
+  },
+  {
+    "id": 4,
+    "title": "Nose Bleed",
+    "image": "NoseBleed"
+  },
+  {
+    "id": 5,
+    "title": "Choking",
+    "image": "Choking"
+  },
+  {
+    "id": 6,
+    "title": "Bee Stings",
+    "image": "BeeStings"
   }
 ]
