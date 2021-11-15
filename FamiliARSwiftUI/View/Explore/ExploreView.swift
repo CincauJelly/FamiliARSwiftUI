@@ -11,7 +11,7 @@ import RealityKit
 
 struct ExploreView: View {
     
-    let exploreItems: [String: ExploreItems] = Bundle.main.decode("ExploreItems.json")
+//    let exploreItems: [ExploreItems] = Bundle.main.decode("ExploreItems.json")
 //    let exploreSteps: [ExploreSteps] = Bundle.main.decode("ExploreSteps.json")
     
     let items = ["Puncture","Sprain","Asthma","NoseBleed","Choking","BeeStings"]
@@ -24,13 +24,13 @@ struct ExploreView: View {
         ZStack{
             Color("Color Secondary 2").ignoresSafeArea()
             VStack{
-                Text("\(exploreItems.count)")
+                Text("Explore First Aid")
                     .font(.system(size: 33))
                     .foregroundColor(Color("Color Primary"))
                 LazyVGrid(columns: columns, spacing: 20) {
-//                    ForEach(exploreSteps) { exploreSteps in
-//                        ExploreSelection(title: "\(exploreSteps.title)", image: "\(exploreSteps.title)")
-//                    }
+                    ForEach(items, id: \.self) { items in
+                        ExploreSelection(title: "\(items)", image: "\(items)")
+                    }
                 }
                     .padding(.horizontal)
                     .frame(maxWidth: 700, maxHeight: 500)

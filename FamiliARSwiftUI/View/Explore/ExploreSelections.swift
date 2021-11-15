@@ -19,12 +19,29 @@ struct ExploreSelection: View {
     }
     
     var body: some View {
-//        NavigationLink(destination: ExploreSteps(explore: itemTitle)){
-            Image(itemImage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 200, height: 200, alignment: .center)
-//        }
+        switch itemTitle {
+        case "Puncture":
+            NavigationLink(destination: PunctureStepView()){
+                Image(itemImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: .center)
+            }
+        case "Sprain":
+            NavigationLink(destination: PunctureStepView()){
+                Image(itemImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: .center)
+            }
+        default:
+            NavigationLink(destination: StepComponentView(title: itemTitle, imageName: itemImage)){
+                Image(itemImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200, alignment: .center)
+            }
+        }
     }
 }
 struct ExploreSelection_Previews: PreviewProvider {
