@@ -178,6 +178,5 @@ extension SimulationView {
 struct SimulationView_Previews: PreviewProvider {
     static var previews: some View {
         SimulationView()
-        .previewInterfaceOrientation(.landscapeLeft)
     }
 }
