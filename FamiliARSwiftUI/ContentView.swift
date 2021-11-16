@@ -10,7 +10,32 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-        MainView()
+        NavigationView{
+            VStack{
+                NavigationLink(destination: GuidanceView()){
+                    Text("Learning Simulation")
+                        .padding()
+                }
+                NavigationLink(destination: ExploreView()){
+                    Text("Explore First Aid")
+                        .padding()
+                }
+                NavigationLink(destination: PracticeView()){
+                    Text("Practice")
+                        .padding()
+                }
+                NavigationLink(destination: ExampleView()){
+                    Text("Testing")
+                        .padding()
+                }
+                .navigationTitle("FamiliAR")
+                .frame(alignment: .top)
+            }
+            ExploreView()
+        }
+        .navigationBarHidden(true)
+        .navigationBarTitle(Text("Home"))
+        .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 
