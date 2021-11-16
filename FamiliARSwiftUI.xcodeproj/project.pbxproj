@@ -19,7 +19,6 @@
 		512066F72742C14C00B1E930 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F62742C14C00B1E930 /* Step.swift */; };
 		512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F82742CE7000B1E930 /* ExampleStep.swift */; };
 		5123B3082727034900C91C4E /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3072727034900C91C4E /* SimulationView.swift */; };
-		5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B316272FB00A00C91C4E /* Macro.rcproject */; };
 		5123B357273025A500C91C4E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5123B356273025A500C91C4E /* FocusEntity */; };
 		514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */; };
 		514B335C2726A85F00FB011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B335B2726A85F00FB011D /* ContentView.swift */; };
@@ -39,6 +38,8 @@
 		EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */; };
 		ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */; };
 		ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1D4273CB21500130C38 /* SprainStepView.swift */; };
+		F3523D11274374E0003D0E9F /* Skin Burn.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F3523D10274374E0003D0E9F /* Skin Burn.usdz */; };
+		F3523D1227437759003D0E9F /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F3523D0E274374B9003D0E9F /* Macro.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAndStingsStepView.swift; sourceTree = "<group>"; };
 		ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureStepView.swift; sourceTree = "<group>"; };
 		ECD3B1D4273CB21500130C38 /* SprainStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprainStepView.swift; sourceTree = "<group>"; };
+		F3523D0E274374B9003D0E9F /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
+		F3523D10274374E0003D0E9F /* Skin Burn.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Skin Burn.usdz"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +181,8 @@
 		5123B3132727BA0B00C91C4E /* AssetAR */ = {
 			isa = PBXGroup;
 			children = (
-				F35003E2274327C4006E2318 /* Macro.rcproject */,
-				F37359C42738DA29006D46ED /* Skin Burn.usdz */,
+				F3523D10274374E0003D0E9F /* Skin Burn.usdz */,
+				F3523D0E274374B9003D0E9F /* Macro.rcproject */,
 			);
 			path = AssetAR;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				514B336F2726A86200FB011D /* FamiliARSwiftUITests */,
 				514B337A2726A86200FB011D /* FamiliARSwiftUIUITests */,
 				514B33572726A85F00FB011D /* Products */,
+				F3523D0D2743743D003D0E9F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,6 +258,14 @@
 				EC25ACBD2741D27A00480063 /* StepComponentView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		F3523D0D2743743D003D0E9F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5123B316272FB00A00C91C4E /* Macro.rcproject */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,11 +379,11 @@
 			files = (
 				512066F12742B38E00B1E930 /* Items.json in Resources */,
 				514B33612726A86100FB011D /* Preview Assets.xcassets in Resources */,
-				F37359C52738DA29006D46ED /* Skin Burn.usdz in Resources */,
 				514B335E2726A86100FB011D /* Assets.xcassets in Resources */,
 				512066F52742BF8E00B1E930 /* Steps.json in Resources */,
 				512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */,
 				512066EB2741FD8800B1E930 /* ExploreSteps.json in Resources */,
+				F3523D11274374E0003D0E9F /* Skin Burn.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3523D1227437759003D0E9F /* Macro.rcproject in Sources */,
 				ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */,
 				514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */,
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
@@ -405,7 +418,6 @@
 				EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */,
 				512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */,
 				8798CED627367E2A0015526C /* GuidancePage.swift in Sources */,
-				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
 				512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */,
 				EC25ACC42741D6CF00480063 /* ChokingStepView.swift in Sources */,
 				512066F72742C14C00B1E930 /* Step.swift in Sources */,
@@ -578,7 +590,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BXW7R92AH;
+				DEVELOPMENT_TEAM = 7CG3SG3HTX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -586,7 +598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = FamiliARSwiftUI.Macro;
+				PRODUCT_BUNDLE_IDENTIFIER = io.azrullahkainage.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -602,7 +614,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BXW7R92AH;
+				DEVELOPMENT_TEAM = 7CG3SG3HTX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -610,7 +622,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = FamiliARSwiftUI.Macro;
+				PRODUCT_BUNDLE_IDENTIFIER = io.azrullahkainage.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

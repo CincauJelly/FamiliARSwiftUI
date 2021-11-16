@@ -59,7 +59,14 @@ struct RealityKitView: UIViewRepresentable {
         weak var view: ARView?
         var sceneState = 0
         var focusEntity: FocusEntity?
-        let skinBurnScene = try! Macro.loadStep1()
+        var skinBurnScene = try! Macro.loadStep1()
+//        do {
+//            skinBurnScene = try Macro
+//
+//
+//        } catch {
+//            print(Error)
+//        }
 
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
             if self.sceneState == 0 {
