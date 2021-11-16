@@ -13,6 +13,7 @@ struct Step: Codable, Identifiable {
         let description: String
     }
     
+    
     let id: Int
     let steps: [Detail]
     let category: String

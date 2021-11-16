@@ -19,4 +19,5 @@ struct Explore: Codable, Identifiable {
     var thumbnail: String {
         "\(description)"
     }
+    
 }
