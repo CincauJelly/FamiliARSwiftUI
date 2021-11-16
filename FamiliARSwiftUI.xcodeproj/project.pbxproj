@@ -12,7 +12,6 @@
 		5123B30E27270CE400C91C4E /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B30D27270CE400C91C4E /* ExploreModel.swift */; };
 		5123B31027270D9800C91C4E /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B30F27270D9800C91C4E /* ExploreViewModel.swift */; };
 		5123B31227278FEF00C91C4E /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B31127278FEF00C91C4E /* ExploreSelections.swift */; };
-		5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B316272FB00A00C91C4E /* Macro.rcproject */; };
 		5123B357273025A500C91C4E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5123B356273025A500C91C4E /* FocusEntity */; };
 		514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */; };
 		514B335C2726A85F00FB011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B335B2726A85F00FB011D /* ContentView.swift */; };
@@ -22,6 +21,12 @@
 		514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 514B33642726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld */; };
 		514B33712726A86200FB011D /* FamiliARSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33702726A86200FB011D /* FamiliARSwiftUITests.swift */; };
 		514B337C2726A86200FB011D /* FamiliARSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B337B2726A86200FB011D /* FamiliARSwiftUIUITests.swift */; };
+		F35003E3274327C4006E2318 /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F35003E2274327C4006E2318 /* Macro.rcproject */; };
+		F37359C52738DA29006D46ED /* Skin Burn.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F37359C42738DA29006D46ED /* Skin Burn.usdz */; };
+		F37359C72738EAE3006D46ED /* SimulationPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37359C62738EAE3006D46ED /* SimulationPreviewModel.swift */; };
+		F3BCD5EF2734C5870085843F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BCD5EE2734C5870085843F /* MainView.swift */; };
+		F3BCD5F22734D57B0085843F /* BtnOptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BCD5F12734D57B0085843F /* BtnOptionComponent.swift */; };
+		F3BCD5F42734D9460085843F /* PrimaryButtonComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BCD5F32734D9460085843F /* PrimaryButtonComp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +52,6 @@
 		5123B30D27270CE400C91C4E /* ExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
 		5123B30F27270D9800C91C4E /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		5123B31127278FEF00C91C4E /* ExploreSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSelections.swift; sourceTree = "<group>"; };
-		5123B316272FB00A00C91C4E /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
 		514B33562726A85F00FB011D /* FamiliARSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamiliARSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIApp.swift; sourceTree = "<group>"; };
 		514B335B2726A85F00FB011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,12 @@
 		514B33772726A86200FB011D /* FamiliARSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiliARSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		514B337B2726A86200FB011D /* FamiliARSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIUITests.swift; sourceTree = "<group>"; };
 		514B337D2726A86200FB011D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35003E2274327C4006E2318 /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
+		F37359C42738DA29006D46ED /* Skin Burn.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Skin Burn.usdz"; sourceTree = "<group>"; };
+		F37359C62738EAE3006D46ED /* SimulationPreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationPreviewModel.swift; sourceTree = "<group>"; };
+		F3BCD5EE2734C5870085843F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F3BCD5F12734D57B0085843F /* BtnOptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnOptionComponent.swift; sourceTree = "<group>"; };
+		F3BCD5F32734D9460085843F /* PrimaryButtonComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonComp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +103,11 @@
 		5123B3002726C24000C91C4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F3BCD5F02734D53F0085843F /* Components */,
 				5123B3052726FD3F00C91C4E /* ExploreView.swift */,
 				5123B31127278FEF00C91C4E /* ExploreSelections.swift */,
 				5123B3072727034900C91C4E /* SimulationView.swift */,
+				F3BCD5EE2734C5870085843F /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5123B30D27270CE400C91C4E /* ExploreModel.swift */,
+				F37359C62738EAE3006D46ED /* SimulationPreviewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,7 +132,8 @@
 		5123B3132727BA0B00C91C4E /* AssetAR */ = {
 			isa = PBXGroup;
 			children = (
-				5123B316272FB00A00C91C4E /* Macro.rcproject */,
+				F35003E2274327C4006E2318 /* Macro.rcproject */,
+				F37359C42738DA29006D46ED /* Skin Burn.usdz */,
 			);
 			path = AssetAR;
 			sourceTree = "<group>";
@@ -186,6 +200,15 @@
 				514B337D2726A86200FB011D /* Info.plist */,
 			);
 			path = FamiliARSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		F3BCD5F02734D53F0085843F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3BCD5F12734D57B0085843F /* BtnOptionComponent.swift */,
+				F3BCD5F32734D9460085843F /* PrimaryButtonComp.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				514B33612726A86100FB011D /* Preview Assets.xcassets in Resources */,
+				F37359C52738DA29006D46ED /* Skin Burn.usdz in Resources */,
 				514B335E2726A86100FB011D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,13 +350,17 @@
 				514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */,
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
-				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
+				F3BCD5F22734D57B0085843F /* BtnOptionComponent.swift in Sources */,
+				F3BCD5F42734D9460085843F /* PrimaryButtonComp.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
 				5123B31027270D9800C91C4E /* ExploreViewModel.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
+				F3BCD5EF2734C5870085843F /* MainView.swift in Sources */,
+				F35003E3274327C4006E2318 /* Macro.rcproject in Sources */,
 				5123B3062726FD3F00C91C4E /* ExploreView.swift in Sources */,
 				5123B30E27270CE400C91C4E /* ExploreModel.swift in Sources */,
 				5123B31227278FEF00C91C4E /* ExploreSelections.swift in Sources */,
+				F37359C72738EAE3006D46ED /* SimulationPreviewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				INFOPLIST_FILE = FamiliARSwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,7 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BXW7R92AH;
 				INFOPLIST_FILE = FamiliARSwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,7 +615,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademy.FamiliARSwiftUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				TEST_TARGET_NAME = FamiliARSwiftUI;
 			};
 			name = Debug;
@@ -607,7 +635,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademy.FamiliARSwiftUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				TEST_TARGET_NAME = FamiliARSwiftUI;
 			};
 			name = Release;

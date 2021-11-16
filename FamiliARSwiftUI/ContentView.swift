@@ -10,13 +10,13 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-            SimulationView()
-        
+        MainView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
