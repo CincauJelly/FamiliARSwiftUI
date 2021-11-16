@@ -132,7 +132,9 @@ struct HistoryView: View {
 
 
                 
-                Text("Practice").foregroundColor(Color("Color Primary")).font(.system(size:24, weight:.bold, design: .default))
+                Text("Practice")
+                    .foregroundColor(Color("Color Primary"))
+                    .font(.system(size:24, weight:.bold, design: .default))
             }
 
             

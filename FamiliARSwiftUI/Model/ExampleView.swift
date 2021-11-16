@@ -20,7 +20,6 @@ struct ExampleView: View{
             Text("\(items.count)")
             Text("\(steps.count)")
             
-            
             ScrollView {
                 LazyVGrid(columns: columns){
                     ForEach(steps) {step in

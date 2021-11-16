@@ -33,9 +33,9 @@ struct ContentView: View {
             }
             ExploreView()
         }
-        .navigationBarHidden(true)
         .navigationBarTitle(Text("Home"))
         .edgesIgnoringSafeArea([.top, .bottom])
+        .navigationBarHidden(true)
     }
 }
 

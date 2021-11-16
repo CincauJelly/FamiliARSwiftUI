@@ -96,8 +96,8 @@ struct SimulationView: View {
             
             VStack{
                 Text("Instruction")
-                    .padding()
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color("Color Primary"))
+                    .font(.system(size:24, weight:.bold, design: .default))
                 ForEach((1...5), id: \.self){i in
                     HStack{
                         Text("Step \(i)")
@@ -116,8 +116,8 @@ struct SimulationView: View {
             .padding()
             .background(Color.gray.opacity(0.4))
             .cornerRadius(15)
-            .position(x: -250, y: -120)
-            .frame(width: 250, height: 150, alignment: .leading)
+            .position(x: -270, y: -120)
+            .frame(width: 200, height: 150, alignment: .leading)
             
             Text("00.00")
                 .padding()
@@ -129,7 +129,7 @@ struct SimulationView: View {
             Image(systemName: "speaker.fill")
                 .foregroundColor(Color.white)
                 .font(.system(size: 48))
-                .position(x: 0, y: 380)
+                .position(x: 0, y: 330)
                 .frame(width: 50, height: 50, alignment: .center)
         }
     }

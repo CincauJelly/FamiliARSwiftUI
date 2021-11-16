@@ -58,7 +58,7 @@ struct PracticeView: View {
                 .background(Color.white.opacity(0.8))
                 .font(.system(size: 48))
                 .cornerRadius(15)
-                .position(x: 0, y: 380)
+                .position(x: 0, y: 330)
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(10)
         }
