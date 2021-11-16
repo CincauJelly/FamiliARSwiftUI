@@ -1,0 +1,32 @@
+{
+    "Puncture": {
+        "id": "Puncture",
+        "title": "Puncture",
+        "description": "Puncture"
+    },
+    "Sprain": {
+        "id": "Sprain",
+        "title": "Sprain",
+        "description": "Sprain"
+    },
+    "Asthma": {
+        "id": "Asthma",
+        "title": "Asthma",
+        "description": "Asthma"
+    },
+    "Nose": {
+        "id": "Nose",
+        "title": "Nose Bleed",
+        "description": "NoseBleed"
+    },
+    "Choking": {
+        "id": "Choking",
+        "title": "Choking",
+        "description": "Choking"
+    },
+    "Bee": {
+        "id": "Bees",
+        "title": "Bee Stings",
+        "description": "BeeStings"
+    }
+}

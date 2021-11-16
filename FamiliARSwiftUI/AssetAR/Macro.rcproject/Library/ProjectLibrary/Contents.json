@@ -63,5 +63,10 @@
     "libraryIdentifier" : "17c1d1859229fb4c275b58e306a2b8ec",
     "format" : "model",
     "displayName" : "Kran.usdz"
+  },
+  {
+    "libraryIdentifier" : "0459ac0b12bf37aee81782f432a1d5f8",
+    "format" : "model",
+    "displayName" : "3DModelAsset.usdz"
   }
 ]
