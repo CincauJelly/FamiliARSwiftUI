@@ -38,7 +38,7 @@ struct ExploreView: View {
 
                 
             }
-            .frame(alignment: .top)
+            .frame(alignment: .top
         }
         
     }
