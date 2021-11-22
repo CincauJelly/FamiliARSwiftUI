@@ -11,31 +11,32 @@ import CoreData
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            VStack{
-                NavigationLink(destination: GuidanceView(states: "learn")){
-                    Text("Learning Simulation")
-                        .padding()
+            ZStack {
+                Color("Color Primary")
+                    .ignoresSafeArea()
+                ScrollView{
+                    NavigationLink(destination: GuidanceView(states: "learn")){
+                        Text("Learning Simulation")
+                            .padding()
+                    }
+                    NavigationLink(destination: ExploreView()){
+                        Text("Explore First Aid")
+                            .padding()
+                    }
+                    NavigationLink(destination: HistoryView()){
+                        Text("Practice")
+                            .padding()
+                    }
+                    NavigationLink(destination: ExampleView()){
+                        Text("Testing")
+                            .padding()
+                    }
+                    .navigationTitle(Text("FamiliAR"))
                 }
-                NavigationLink(destination: ExploreView()){
-                    Text("Explore First Aid")
-                        .padding()
-                }
-                NavigationLink(destination: HistoryView()){
-                    Text("Practice")
-                        .padding()
-                }
-                NavigationLink(destination: ExampleView()){
-                    Text("Testing")
-                        .padding()
-                }
-                .navigationTitle("FamiliAR")
-                .frame(alignment: .top)
             }
             ExploreView()
         }
-        .navigationBarTitle(Text("Home"))
-        .edgesIgnoringSafeArea([.top, .bottom])
-        .navigationBarHidden(true)
+        .foregroundColor(Color("Color Secondary 2"))
     }
 }
 
