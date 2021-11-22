@@ -20,6 +20,9 @@
 		512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F82742CE7000B1E930 /* ExampleStep.swift */; };
 		5123B3082727034900C91C4E /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3072727034900C91C4E /* SimulationView.swift */; };
 		5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B316272FB00A00C91C4E /* Macro.rcproject */; };
+		5123B30E27270CE400C91C4E /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B30D27270CE400C91C4E /* ExploreModel.swift */; };
+		5123B31027270D9800C91C4E /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B30F27270D9800C91C4E /* ExploreViewModel.swift */; };
+		5123B31227278FEF00C91C4E /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B31127278FEF00C91C4E /* ExploreSelections.swift */; };
 		5123B357273025A500C91C4E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5123B356273025A500C91C4E /* FocusEntity */; };
 		514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */; };
 		514B335C2726A85F00FB011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B335B2726A85F00FB011D /* ContentView.swift */; };
@@ -40,6 +43,12 @@
 		EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */; };
 		ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */; };
 		ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1D4273CB21500130C38 /* SprainStepView.swift */; };
+		F35003E3274327C4006E2318 /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F35003E2274327C4006E2318 /* Macro.rcproject */; };
+		F37359C52738DA29006D46ED /* Skin Burn.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F37359C42738DA29006D46ED /* Skin Burn.usdz */; };
+		F37359C72738EAE3006D46ED /* SimulationPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37359C62738EAE3006D46ED /* SimulationPreviewModel.swift */; };
+		F3BCD5EF2734C5870085843F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BCD5EE2734C5870085843F /* MainView.swift */; };
+		F3BCD5F22734D57B0085843F /* BtnOptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BCD5F12734D57B0085843F /* BtnOptionComponent.swift */; };
+		F3BCD5F42734D9460085843F /* PrimaryButtonComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BCD5F32734D9460085843F /* PrimaryButtonComp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +82,9 @@
 		512066F82742CE7000B1E930 /* ExampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStep.swift; sourceTree = "<group>"; };
 		5123B3072727034900C91C4E /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		5123B316272FB00A00C91C4E /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
+		5123B30D27270CE400C91C4E /* ExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
+		5123B30F27270D9800C91C4E /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		5123B31127278FEF00C91C4E /* ExploreSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSelections.swift; sourceTree = "<group>"; };
 		514B33562726A85F00FB011D /* FamiliARSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamiliARSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIApp.swift; sourceTree = "<group>"; };
 		514B335B2726A85F00FB011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +110,12 @@
 		EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAndStingsStepView.swift; sourceTree = "<group>"; };
 		ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureStepView.swift; sourceTree = "<group>"; };
 		ECD3B1D4273CB21500130C38 /* SprainStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprainStepView.swift; sourceTree = "<group>"; };
+		F35003E2274327C4006E2318 /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
+		F37359C42738DA29006D46ED /* Skin Burn.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Skin Burn.usdz"; sourceTree = "<group>"; };
+		F37359C62738EAE3006D46ED /* SimulationPreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationPreviewModel.swift; sourceTree = "<group>"; };
+		F3BCD5EE2734C5870085843F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F3BCD5F12734D57B0085843F /* BtnOptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnOptionComponent.swift; sourceTree = "<group>"; };
+		F3BCD5F32734D9460085843F /* PrimaryButtonComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonComp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +172,11 @@
 				EC25ACC12741D54100480063 /* NoseBleedStepView.swift */,
 				EC25ACC32741D6CF00480063 /* ChokingStepView.swift */,
 				EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */,
+				F3BCD5F02734D53F0085843F /* Components */,
+				5123B3052726FD3F00C91C4E /* ExploreView.swift */,
+				5123B31127278FEF00C91C4E /* ExploreSelections.swift */,
+				5123B3072727034900C91C4E /* SimulationView.swift */,
+				F3BCD5EE2734C5870085843F /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +190,8 @@
 				512066EE2742B1F700B1E930 /* ExampleView.swift */,
 				512066F22742B62800B1E930 /* Bundle-Decodable.swift */,
 				512066F82742CE7000B1E930 /* ExampleStep.swift */,
+				5123B30D27270CE400C91C4E /* ExploreModel.swift */,
+				F37359C62738EAE3006D46ED /* SimulationPreviewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,7 +206,8 @@
 		5123B3132727BA0B00C91C4E /* AssetAR */ = {
 			isa = PBXGroup;
 			children = (
-				5123B316272FB00A00C91C4E /* Macro.rcproject */,
+				F35003E2274327C4006E2318 /* Macro.rcproject */,
+				F37359C42738DA29006D46ED /* Skin Burn.usdz */,
 			);
 			path = AssetAR;
 			sourceTree = "<group>";
@@ -256,6 +282,13 @@
 				EC25ACBD2741D27A00480063 /* StepComponentView.swift */,
 			);
 			path = Component;
+		F3BCD5F02734D53F0085843F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3BCD5F12734D57B0085843F /* BtnOptionComponent.swift */,
+				F3BCD5F32734D9460085843F /* PrimaryButtonComp.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +402,7 @@
 			files = (
 				512066F12742B38E00B1E930 /* Items.json in Resources */,
 				514B33612726A86100FB011D /* Preview Assets.xcassets in Resources */,
+				F37359C52738DA29006D46ED /* Skin Burn.usdz in Resources */,
 				514B335E2726A86100FB011D /* Assets.xcassets in Resources */,
 				512066F52742BF8E00B1E930 /* Steps.json in Resources */,
 				512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */,
@@ -413,6 +447,8 @@
 				512066F72742C14C00B1E930 /* Step.swift in Sources */,
 				87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */,
 				ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */,
+				F3BCD5F22734D57B0085843F /* BtnOptionComponent.swift in Sources */,
+				F3BCD5F42734D9460085843F /* PrimaryButtonComp.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
 				EC25ACC22741D54100480063 /* NoseBleedStepView.swift in Sources */,
 				8773D942273A320F005165D9 /* PracticeView.swift in Sources */,
@@ -421,6 +457,12 @@
 				512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */,
 				512066ED2742029300B1E930 /* Explore.swift in Sources */,
 				512066EF2742B1F700B1E930 /* ExampleView.swift in Sources */,
+				F3BCD5EF2734C5870085843F /* MainView.swift in Sources */,
+				F35003E3274327C4006E2318 /* Macro.rcproject in Sources */,
+				5123B3062726FD3F00C91C4E /* ExploreView.swift in Sources */,
+				5123B30E27270CE400C91C4E /* ExploreModel.swift in Sources */,
+				5123B31227278FEF00C91C4E /* ExploreSelections.swift in Sources */,
+				F37359C72738EAE3006D46ED /* SimulationPreviewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,7 +721,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademy.FamiliARSwiftUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				TEST_TARGET_NAME = FamiliARSwiftUI;
 			};
 			name = Debug;
@@ -699,7 +741,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademy.FamiliARSwiftUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 				TEST_TARGET_NAME = FamiliARSwiftUI;
 			};
 			name = Release;
