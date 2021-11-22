@@ -12,6 +12,12 @@ struct GuidanceView: View {
     
     @State var state = 0
     
+    let states: String
+    
+    init(states: String){
+        self.states = states
+    }
+    
     var body: some View {
         ZStack(){
             Color("Color Secondary 2").ignoresSafeArea()
@@ -27,7 +33,7 @@ struct GuidanceView: View {
                     .font(.system(size: 36, weight: .bold, design: .default))
                     .frame(alignment: .top)
                     .padding(100)
-                if state == 0 {
+                if states == "learn" {
                     Text("Prepare to scan the surface.\nMake sure the surface area is more or not less than 2 X 2 M.")
                         .foregroundColor(Color("Color Secondary blue"))
                         .multilineTextAlignment(.center)
@@ -46,26 +52,20 @@ struct GuidanceView: View {
                         .opacity(0.1)
                         .frame(width: 250, height: 250, alignment: .leading)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 150))
-                    if state == 0{
+                    if states == "learn"{
                         NavigationLink(destination: SimulationView()) {
-                            Button("Continue"){
-                                print("tapped")
-                                //Navigate to Next Scene
-                            }
+                            Text("Continue")
                             .padding()
-                            .frame(maxWidth: 300)
+                            .frame(minWidth: 200, maxWidth: 300)
                             .foregroundColor(.white)
                             .background(Color("Color Primary"))
                             .clipShape(Capsule())
                         }
                     } else {
                         NavigationLink(destination: PracticeView()) {
-                            Button("Continue"){
-                                print("tapped")
-                                //Navigate to Next Scene
-                            }
+                            Text("Continue")
                             .padding()
-                            .frame(maxWidth: 300)
+                            .frame(minWidth: 200, maxWidth: 300)
                             .foregroundColor(.white)
                             .background(Color("Color Primary"))
                             .clipShape(Capsule())
@@ -85,7 +85,7 @@ struct GuidanceView: View {
 
 struct GuidanceView_Previews: PreviewProvider {
     static var previews: some View {
-        GuidanceView()
+        GuidanceView(states: "practice")
 .previewInterfaceOrientation(.landscapeLeft)
     }
 }

@@ -30,6 +30,8 @@ struct PracticeView: View {
     
     @ObservedObject var stopWatchManager = StopWatchManager()
     
+    @State private var showingButton = true
+    
     var body: some View {
         ZStack{
             
@@ -43,16 +45,20 @@ struct PracticeView: View {
                 .position(x: 600, y: -350)
                 .frame(width: 100, height: 50, alignment: .leading)
             
-            Button(action: {self.stopWatchManager.start()}) {
-                            TimerButton(label: "Start", buttonColor: Color("Color Primary"))
-                        }
+            Button(action: {
+                self.stopWatchManager.start()
+                
+            })
+            {
+                TimerButton(label: "Start", buttonColor: Color("Color Primary"))
+            }
             
             Image(systemName: "speaker.wave.3.fill")
                 .foregroundColor(Color("Color Primary"))
                 .background(Color.white.opacity(0.8))
                 .font(.system(size: 48))
                 .cornerRadius(15)
-                .position(x: 0, y: 380)
+                .position(x: 0, y: 330)
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(10)
         }
