@@ -28,14 +28,13 @@ struct ContentView: View {
                     Text("Testing")
                         .padding()
                 }
-                .navigationTitle("FamiliAR")
                 .frame(alignment: .top)
             }
             ExploreView()
         }
-        .navigationBarTitle(Text("Home"))
-        .edgesIgnoringSafeArea([.top, .bottom])
-        .navigationBarHidden(true)
+//        .navigationBarTitle(Text("Home"))
+//        .edgesIgnoringSafeArea([.top, .bottom])
+//        .navigationBarHidden(true)
     }
 }
 
