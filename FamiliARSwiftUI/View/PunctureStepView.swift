@@ -9,22 +9,21 @@ import SwiftUI
 
 struct PunctureStepView: View {
     init() {
-        UINavigationBar.appearance().backgroundColor = UIColor(red: 168/255, green: 34/255, blue: 61/255, alpha: 1)
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(red: 1, green: 246/255, blue: 243/255, alpha: 1)]
-        
+        UINavigationBar.appearance().backgroundColor = UIColor(Color("Color Primary"))
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color("Color Secondary 2"))]
     }
     @Environment(\.presentationMode) var presentation
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 255, green: 246, blue: 243, alpha: 1)).ignoresSafeArea()
+            Color("Color Secondary 2").ignoresSafeArea()
             NavigationView {
                 VStack{
                     StepComponentView(title: "Puncture", descrition: "Wash your hands. This helps prevent infection.", imageName: "Puncture_Step1")
                     HStack(spacing: 120) {
                         PrevNavigationView().opacity(0)
                         Text("1/6")
-                            .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                            .foregroundColor(Color("Color Primary"))
                             .opacity(1)
                         NavigationLink(destination: Step2View(), label: {
                             NextNavigationView()
@@ -53,7 +52,7 @@ struct Step2View: View {
                     PrevNavigationView()
                 })
                 Text("2/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: Step3View(), label: {
                     NextNavigationView()
@@ -78,7 +77,7 @@ struct Step3View: View {
                     PrevNavigationView()
                 })
                 Text("3/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: Step4View(), label: {
                     NextNavigationView()
@@ -103,7 +102,7 @@ struct Step4View: View {
                     PrevNavigationView()
                 })
                 Text("4/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: Step5View(), label: {
                     NextNavigationView()
@@ -128,7 +127,7 @@ struct Step5View: View {
                     PrevNavigationView()
                 })
                 Text("4/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: Step6View(), label: {
                     NextNavigationView()
@@ -153,7 +152,7 @@ struct Step6View: View {
                     PrevNavigationView()
                 })
                 Text("6/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: Text("Finished"), label: {
                     NextNavigationView()
