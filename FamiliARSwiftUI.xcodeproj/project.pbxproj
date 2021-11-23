@@ -23,7 +23,6 @@
 		512066F72742C14C00B1E930 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F62742C14C00B1E930 /* Step.swift */; };
 		512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F82742CE7000B1E930 /* ExampleStep.swift */; };
 		5123B3082727034900C91C4E /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3072727034900C91C4E /* SimulationView.swift */; };
-		5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B316272FB00A00C91C4E /* Macro.rcproject */; };
 		5123B357273025A500C91C4E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5123B356273025A500C91C4E /* FocusEntity */; };
 		514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */; };
 		514B335C2726A85F00FB011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B335B2726A85F00FB011D /* ContentView.swift */; };
@@ -44,6 +43,7 @@
 		EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */; };
 		ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */; };
 		ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1D4273CB21500130C38 /* SprainStepView.swift */; };
+		F3D5F4AB274C880500CDDEE0 /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F3D5F4AA274C880500CDDEE0 /* Macro.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 		512066F62742C14C00B1E930 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		512066F82742CE7000B1E930 /* ExampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStep.swift; sourceTree = "<group>"; };
 		5123B3072727034900C91C4E /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
-		5123B316272FB00A00C91C4E /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
 		514B33562726A85F00FB011D /* FamiliARSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamiliARSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIApp.swift; sourceTree = "<group>"; };
 		514B335B2726A85F00FB011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAndStingsStepView.swift; sourceTree = "<group>"; };
 		ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureStepView.swift; sourceTree = "<group>"; };
 		ECD3B1D4273CB21500130C38 /* SprainStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprainStepView.swift; sourceTree = "<group>"; };
+		F3D5F4AA274C880500CDDEE0 /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Macro.rcproject; path = ../../../Macro.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +191,7 @@
 		5123B3132727BA0B00C91C4E /* AssetAR */ = {
 			isa = PBXGroup;
 			children = (
-				5123B316272FB00A00C91C4E /* Macro.rcproject */,
+				F3D5F4AA274C880500CDDEE0 /* Macro.rcproject */,
 			);
 			path = AssetAR;
 			sourceTree = "<group>";
@@ -419,8 +419,8 @@
 				512066F32742B62800B1E930 /* Bundle-Decodable.swift in Sources */,
 				EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */,
 				512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */,
+				F3D5F4AB274C880500CDDEE0 /* Macro.rcproject in Sources */,
 				8798CED627367E2A0015526C /* GuidancePage.swift in Sources */,
-				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
 				512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */,
 				EC25ACC42741D6CF00480063 /* ChokingStepView.swift in Sources */,
 				511108DE274BD1FF00A9C1F2 /* MainView.swift in Sources */,
@@ -596,7 +596,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BXW7R92AH;
+				DEVELOPMENT_TEAM = 7CG3SG3HTX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -620,7 +620,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BXW7R92AH;
+				DEVELOPMENT_TEAM = 7CG3SG3HTX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
