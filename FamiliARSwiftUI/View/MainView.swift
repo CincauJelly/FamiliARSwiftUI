@@ -2,29 +2,52 @@
 //  MainView.swift
 //  FamiliARSwiftUI
 //
-//  Created by Shiddiq Syuhada on 25/10/21.
+//  Created by Azrullah Kainage on 05/11/21.
 //
 
-import Foundation
 import SwiftUI
+import SceneKit
 
 struct MainView: View {
+    @State var selected = "Skin Burn";
+    var screenSize = UIScreen.main.bounds
+    
+    
     var body: some View {
-        TabView {
-            ContentView()
-                .tabItem {
-                    Label("Menu", systemImage: "list.dash")
+        NavigationView {
+            ZStack {
+                SceneView(scene: {
+                    let scene = SCNScene(named: "Skin Burn.usdz")!
+                    scene.background.contents = UIColor.black /// here!
+                    return scene
+                }(), options: [.autoenablesDefaultLighting, .allowsCameraControl])
+                .frame(width: screenSize.width, height: screenSize.height)
+                .padding(.trailing, 30)
+                VStack{
+                    HStack {
+                        
+                            PrimaryButtonComp(title: "Start Simulation")
+                            .padding(.trailing, 60)
+                            .padding(.bottom, 50)
+                    }
+                    .frame(width: screenSize.width * 0.9 ,alignment: .trailing)
+                    HStack {
+                        BtnOptionComponent(title: "Skin Burn", selected: $selected)
+                        BtnOptionComponent(title: "Bycycle Accident", selected: $selected)
+                        BtnOptionComponent(title: "Fall From Stairs", selected: $selected)
+                        BtnOptionComponent(title: "Knife Cuts", selected: $selected)
+                    }
                 }
-            SimulationView()
-                .tabItem {
-                    Label("Simulation", systemImage: "square.and.pencil")
-                }
+                .frame(width: screenSize.width * 0.7, height: screenSize.height * 0.7, alignment: .bottom)
+            }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+.previewInterfaceOrientation(.landscapeRight)
     }
 }

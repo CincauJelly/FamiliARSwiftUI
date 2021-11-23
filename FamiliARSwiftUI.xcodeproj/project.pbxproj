@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511108DE274BD1FF00A9C1F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108DD274BD1FF00A9C1F2 /* MainView.swift */; };
+		511108E0274BD26300A9C1F2 /* PrimaryButtonComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108DF274BD26300A9C1F2 /* PrimaryButtonComp.swift */; };
+		511108E2274BD29100A9C1F2 /* BtnOptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108E1274BD29100A9C1F2 /* BtnOptionComponent.swift */; };
+		511108E4274BD2E800A9C1F2 /* SimulationPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108E3274BD2E800A9C1F2 /* SimulationPreviewModel.swift */; };
 		512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E32741FD3D00B1E930 /* ExploreView.swift */; };
 		512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E52741FD5200B1E930 /* ExploreSelections.swift */; };
 		512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066E82741FD8800B1E930 /* ExploreItems.json */; };
@@ -60,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		511108DD274BD1FF00A9C1F2 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		511108DF274BD26300A9C1F2 /* PrimaryButtonComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonComp.swift; sourceTree = "<group>"; };
+		511108E1274BD29100A9C1F2 /* BtnOptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnOptionComponent.swift; sourceTree = "<group>"; };
+		511108E3274BD2E800A9C1F2 /* SimulationPreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationPreviewModel.swift; sourceTree = "<group>"; };
 		512066E32741FD3D00B1E930 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreView.swift; path = Explore/ExploreView.swift; sourceTree = "<group>"; };
 		512066E52741FD5200B1E930 /* ExploreSelections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreSelections.swift; path = Explore/ExploreSelections.swift; sourceTree = "<group>"; };
 		512066E82741FD8800B1E930 /* ExploreItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ExploreItems.json; path = FamiliARSwiftUI/View/Explore/ExploreItems.json; sourceTree = SOURCE_ROOT; };
@@ -142,6 +150,7 @@
 			children = (
 				ECD3B1D3273B85A600130C38 /* Component */,
 				512066E32741FD3D00B1E930 /* ExploreView.swift */,
+				511108DD274BD1FF00A9C1F2 /* MainView.swift */,
 				5180A757274358AE00069403 /* HistoryView.swift */,
 				512066E52741FD5200B1E930 /* ExploreSelections.swift */,
 				5123B3072727034900C91C4E /* SimulationView.swift */,
@@ -167,6 +176,7 @@
 				512066EE2742B1F700B1E930 /* ExampleView.swift */,
 				512066F22742B62800B1E930 /* Bundle-Decodable.swift */,
 				512066F82742CE7000B1E930 /* ExampleStep.swift */,
+				511108E3274BD2E800A9C1F2 /* SimulationPreviewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				EC25ACBD2741D27A00480063 /* StepComponentView.swift */,
+				511108DF274BD26300A9C1F2 /* PrimaryButtonComp.swift */,
+				511108E1274BD29100A9C1F2 /* BtnOptionComponent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -402,6 +414,7 @@
 				514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */,
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
+				511108E0274BD26300A9C1F2 /* PrimaryButtonComp.swift in Sources */,
 				EC25ACC02741D35700480063 /* AsthmaStepView.swift in Sources */,
 				512066F32742B62800B1E930 /* Bundle-Decodable.swift in Sources */,
 				EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */,
@@ -410,8 +423,10 @@
 				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
 				512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */,
 				EC25ACC42741D6CF00480063 /* ChokingStepView.swift in Sources */,
+				511108DE274BD1FF00A9C1F2 /* MainView.swift in Sources */,
 				512066F72742C14C00B1E930 /* Step.swift in Sources */,
 				87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */,
+				511108E2274BD29100A9C1F2 /* BtnOptionComponent.swift in Sources */,
 				ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
 				EC25ACC22741D54100480063 /* NoseBleedStepView.swift in Sources */,
@@ -421,6 +436,7 @@
 				512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */,
 				512066ED2742029300B1E930 /* Explore.swift in Sources */,
 				512066EF2742B1F700B1E930 /* ExampleView.swift in Sources */,
+				511108E4274BD2E800A9C1F2 /* SimulationPreviewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
