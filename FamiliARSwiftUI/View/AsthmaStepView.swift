@@ -9,22 +9,21 @@ import SwiftUI
 
 struct AstmaStepView: View {
     init() {
-        UINavigationBar.appearance().backgroundColor = UIColor(red: 168/255, green: 34/255, blue: 61/255, alpha: 1)
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(red: 1, green: 246/255, blue: 243/255, alpha: 1)]
-        
+        UINavigationBar.appearance().backgroundColor = UIColor(Color("Color Primary"))
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color("Color Secondary 2"))]
     }
     @Environment(\.presentationMode) var presentation
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 255, green: 246, blue: 243, alpha: 1)).ignoresSafeArea()
+            Color("Color Secondary 2").ignoresSafeArea()
             NavigationView {
                 VStack{
                     StepComponentView(title: "Asthma", descrition: "Sit upright. Stop whatever you are doing and sit upright. Bending over or lying down can constrict your breathing even more.", imageName: "Asthma_Step1")
                     HStack(spacing: 120) {
                         PrevNavigationView().opacity(0)
                         Text("1/6")
-                            .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                            .foregroundColor(Color("Color Primary"))
                             .opacity(1)
                         NavigationLink(destination: AstmaStep2View(), label: {
                             NextNavigationView()
@@ -53,7 +52,7 @@ struct AstmaStep2View: View {
                     PrevNavigationView()
                 })
                 Text("2/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: AstmaStep3View(), label: {
                     NextNavigationView()
@@ -78,7 +77,7 @@ struct AstmaStep3View: View {
                     PrevNavigationView()
                 })
                 Text("3/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: AstmaStep4View(), label: {
                     NextNavigationView()
@@ -103,7 +102,7 @@ struct AstmaStep4View: View {
                     PrevNavigationView()
                 })
                 Text("4/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: AstmaStep5View(), label: {
                     NextNavigationView()
@@ -128,7 +127,7 @@ struct AstmaStep5View: View {
                     PrevNavigationView()
                 })
                 Text("4/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: AstmaStep6View(), label: {
                     NextNavigationView()
@@ -153,7 +152,7 @@ struct AstmaStep6View: View {
                     PrevNavigationView()
                 })
                 Text("6/6")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: Text("Finished"), label: {
                     NextNavigationView()

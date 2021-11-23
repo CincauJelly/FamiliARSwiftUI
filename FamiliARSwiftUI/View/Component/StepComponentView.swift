@@ -23,8 +23,8 @@ struct StepComponentView: View {
             Text("\(descrition)")
                 .frame(width: 800)
                 .padding()
-                .foregroundColor(Color(#colorLiteral(red: 255, green: 246, blue: 243, alpha: 1)))
-                .background(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                .foregroundColor(Color("Color Secondary 2"))
+                .background(Color("Color Primary"))
                 .cornerRadius(10)
                 .opacity(descrition == "" ? 0 : 1)
         }
@@ -40,7 +40,7 @@ struct PrevNavigationView: View {
             .frame(width: 38, height: 38)
             .scaledToFit()
             .rotationEffect(.radians(.pi))
-            .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+            .foregroundColor(Color("Color Primary"))
     }
 }
 
@@ -50,7 +50,7 @@ struct NextNavigationView: View {
             .resizable()
             .frame(width: 38, height: 38)
             .scaledToFit()
-            .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+            .foregroundColor(Color("Color Primary"))
     }
 }
 

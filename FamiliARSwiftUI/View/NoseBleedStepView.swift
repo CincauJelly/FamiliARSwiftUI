@@ -9,22 +9,21 @@ import SwiftUI
 
 struct NoseBleedStepView: View {
     init() {
-        UINavigationBar.appearance().backgroundColor = UIColor(red: 168/255, green: 34/255, blue: 61/255, alpha: 1)
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(red: 1, green: 246/255, blue: 243/255, alpha: 1)]
-        
+        UINavigationBar.appearance().backgroundColor = UIColor(Color("Color Primary"))
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color("Color Secondary 2"))]
     }
     @Environment(\.presentationMode) var presentation
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 255, green: 246, blue: 243, alpha: 1)).ignoresSafeArea()
+            Color("Color Secondary 2").ignoresSafeArea()
             NavigationView {
                 VStack{
                     StepComponentView(title: "Nose Bleed", descrition: "Sit down and firmly pinch the soft lower part of your nose, just above your nostrils, for at least 10-15 minutes.", imageName: "Nosebleed_Step1")
                     HStack(spacing: 120) {
                         PrevNavigationView().opacity(0)
                         Text("1/4")
-                            .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                            .foregroundColor(Color("Color Primary"))
                             .opacity(1)
                         NavigationLink(destination: NoseBleedStep2View(), label: {
                             NextNavigationView()
@@ -53,7 +52,7 @@ struct NoseBleedStep2View: View {
                     PrevNavigationView()
                 })
                 Text("2/4")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: NoseBleedStep3View(), label: {
                     NextNavigationView()
@@ -77,7 +76,7 @@ struct NoseBleedStep3View: View {
                     PrevNavigationView()
                 })
                 Text("3/4")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: NoseBleedStep4View(), label: {
                     NextNavigationView()
@@ -101,7 +100,7 @@ struct NoseBleedStep4View: View {
                     PrevNavigationView()
                 })
                 Text("4/4")
-                    .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+                    .foregroundColor(Color("Color Primary"))
                     .opacity(1)
                 NavigationLink(destination: Text("Finished"), label: {
                     NextNavigationView()
