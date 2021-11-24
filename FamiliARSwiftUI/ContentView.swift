@@ -36,7 +36,7 @@ struct ContentView: View {
             }
             ExploreView()
         }
-        .foregroundColor(Color("Color Secondary 2"))
+//        .foregroundColor(Color("Color Secondary 2"))
     }
 }
 
