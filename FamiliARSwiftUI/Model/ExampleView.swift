@@ -12,6 +12,9 @@ struct ExampleView: View{
     let items: [String:Explore] = Bundle.main.decode("Items.json")
     let steps: [Step] = Bundle.main.decode("Steps.json")
     
+    let puncture: [StepModel] = Bundle.main.decode("Puncture.json")
+    @State var tabPage: String = "1"
+    
     let columns = [
         GridItem(.adaptive(minimum: 150))]
     
@@ -43,16 +46,43 @@ struct ExampleView: View{
                 }
             }
             
-            TabView {
-                ForEach(steps){step in
-                    VStack{
-                        Text(step.stepDetail)
-                        
+            VStack {
+                TabView (selection: $tabPage){
+                    ForEach(puncture){step in
+                        VStack{
+                            Image(step.stepImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                            Text(step.stepDescription)
+                        }.tag(step.stepId)
+                    }
+                }
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                HStack{
+                    Button{
+                        print("prev")
+                        if Int(self.tabPage)! > 1 {
+                            self.tabPage = "\(Int(self.tabPage)! - 1)"
+                        } else {
+                            print("beginning of step")
+                        }
+                    } label: {
+                        Image(systemName: "arrowtriangle.backward.fill")
+                    }
+                    Text("\(tabPage) / \(puncture.count)")
+                    Button{
+                        print("next")
+                        if Int(self.tabPage)! < puncture.count {
+                            self.tabPage = "\(Int(self.tabPage)! + 1)"
+                        } else {
+                            print("end of step")
+                        }
+                    } label: {
+                        Image(systemName: "arrowtriangle.right.fill")
                     }
                 }
             }
-            .tabViewStyle(.page)
-            .indexViewStyle(.page(backgroundDisplayMode: .always))
         }
     }
 }

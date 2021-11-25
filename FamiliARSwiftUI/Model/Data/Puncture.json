@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "description": "Wash your hands. This helps prevent infection"
+    },
+    {
+        "id": 2,
+        "description": "Stop the bleeding. Apply gentle pressure with a clean bandage or cloth"
+    },
+    {
+        "id": 3,
+        "description": "Clean the wound. Rinse the wound with clear water for 5 to 10 minutes. If dirt or debris remains in the wound, use a washcloth to gently scrub it off. See a doctor if you can't remove all of the dirt or debris."
+    },
+    {
+        "id": 4,
+        "description": "\nApply an antibiotic. Apply a thin layer of an antibiotic cream or ointment (Neosporin, Polysporin). For the first two days, rewash the area and reapply the antibiotic when you change the dressing.\nCertain ingredients in some ointments can cause a mild rash in some people. If a rash appears, stop using the product"
+    },
+    {
+        "id": 5,
+        "description": "Cover the wound. Bandages help keep the wound clean."
+    },
+    {
+        "id": 6,
+        "description": "Change the dressing. Do this daily or whenever the bandage becomes wet or dirty."
+    }
+]
