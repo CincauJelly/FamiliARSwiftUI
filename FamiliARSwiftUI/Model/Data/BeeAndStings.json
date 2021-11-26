@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "description": "Stay calm. Although most bees usually only sting once, wasps and hornets can sting again. If you are stung, calmly walk away from the area to avoid additional attacks.",
+        "type": "BeeStings"
+    },
+    {
+        "id": 2,
+        "description": "Remove the stinger. If the stinger remains in your skin, remove it by scraping over it with your fingernail or a piece of gauze. Never use tweezers to remove a stinger, as squeezing it can cause more venom to release into your skin.",
+        "type": "BeeStings"
+    },
+    {
+        "id": 3,
+        "description": "Wash the sting with soap and water.",
+        "type": "BeeStings"
+    },
+    {
+        "id": 4,
+        "description": "Apply a cold pack to reduce swelling. However, if the swelling moves to other parts of your body, such as your face or neck, go to the emergency room immediately, as you might be having an allergic reaction. Other signs of an allergic reaction include difficulty breathing, nausea, hives, or dizziness.",
+        "type": "BeeStings"
+    },
+    {
+        "id": 5,
+        "description": "Consider taking over-the-counter pain medication. Bee, wasp, and hornet stings are painful. Painkillers like acetaminophen or ibuprofen can help relieve the pain. Always follow the directions on the label and use the correct dose.",
+        "type": "BeeStings"
+    }
+]
