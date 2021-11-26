@@ -1,0 +1,23 @@
+
+[
+    {
+        "id": 1,
+        "description": "Rest. Avoid activities that cause pain, swelling or discomfort.",
+        "type": "Sprain"
+    },
+    {
+        "id": 2,
+        "description": "Use an ice pack immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. If you have vascular disease, diabetes or decreased sensation, talk with your doctor before applying ice.",
+        "type": "Sprain"
+    },
+    {
+        "id": 3,
+        "description": "To help stop the swelling, compress the ankle with an elastic bandage until the swelling stops. Don't hinder circulation by wrapping too tightly. Begin wrapping at the end farthest from your heart.",
+        "type": "Sprain"
+    },
+    {
+        "id": 4,
+        "description": "To reduce swelling, elevate your ankle above the level of your heart, especially at night. Gravity helps reduce swelling by draining excess fluid.",
+        "type": "Sprain"
+    }
+]
