@@ -9,7 +9,10 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    var body: some View {
+    
+var body: some View {
+   
+
         NavigationView{
             ZStack {
                 Color("Color Primary")
@@ -36,6 +39,7 @@ struct ContentView: View {
             }
             ExploreView()
         }
+
 //        .foregroundColor(Color("Color Secondary 2"))
     }
 }
@@ -44,5 +48,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
 .previewInterfaceOrientation(.landscapeLeft)
+        }
     }
-}
+

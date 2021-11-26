@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FBEE887274FEB3F008B8620 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE886274FEB3F008B8620 /* OnboardingModel.swift */; };
+		3FBEE889274FEB54008B8620 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE888274FEB54008B8620 /* Onboarding.swift */; };
 		512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E32741FD3D00B1E930 /* ExploreView.swift */; };
 		512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E52741FD5200B1E930 /* ExploreSelections.swift */; };
 		512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066E82741FD8800B1E930 /* ExploreItems.json */; };
@@ -60,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FBEE886274FEB3F008B8620 /* OnboardingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		3FBEE888274FEB54008B8620 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		512066E32741FD3D00B1E930 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreView.swift; path = Explore/ExploreView.swift; sourceTree = "<group>"; };
 		512066E52741FD5200B1E930 /* ExploreSelections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreSelections.swift; path = Explore/ExploreSelections.swift; sourceTree = "<group>"; };
 		512066E82741FD8800B1E930 /* ExploreItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ExploreItems.json; path = FamiliARSwiftUI/View/Explore/ExploreItems.json; sourceTree = SOURCE_ROOT; };
@@ -140,6 +144,7 @@
 		5123B3002726C24000C91C4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3FBEE888274FEB54008B8620 /* Onboarding.swift */,
 				ECD3B1D3273B85A600130C38 /* Component */,
 				512066E32741FD3D00B1E930 /* ExploreView.swift */,
 				5180A757274358AE00069403 /* HistoryView.swift */,
@@ -167,6 +172,7 @@
 				512066EE2742B1F700B1E930 /* ExampleView.swift */,
 				512066F22742B62800B1E930 /* Bundle-Decodable.swift */,
 				512066F82742CE7000B1E930 /* ExampleStep.swift */,
+				3FBEE886274FEB3F008B8620 /* OnboardingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 				EC25ACC02741D35700480063 /* AsthmaStepView.swift in Sources */,
 				512066F32742B62800B1E930 /* Bundle-Decodable.swift in Sources */,
 				EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */,
+				3FBEE889274FEB54008B8620 /* Onboarding.swift in Sources */,
 				512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */,
 				8798CED627367E2A0015526C /* GuidancePage.swift in Sources */,
 				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
@@ -418,6 +425,7 @@
 				8773D942273A320F005165D9 /* PracticeView.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
 				EC25ACBE2741D27A00480063 /* StepComponentView.swift in Sources */,
+				3FBEE887274FEB3F008B8620 /* OnboardingModel.swift in Sources */,
 				512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */,
 				512066ED2742029300B1E930 /* Explore.swift in Sources */,
 				512066EF2742B1F700B1E930 /* ExampleView.swift in Sources */,
@@ -580,7 +588,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BXW7R92AH;
+				DEVELOPMENT_TEAM = 43GD4RTJWG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -604,7 +612,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FamiliARSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 7BXW7R92AH;
+				DEVELOPMENT_TEAM = 43GD4RTJWG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FamiliARSwiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
