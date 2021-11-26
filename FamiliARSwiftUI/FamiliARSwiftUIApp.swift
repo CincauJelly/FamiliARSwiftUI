@@ -17,10 +17,9 @@ struct FamiliARSwiftUIApp: App {
             if onboardingActive {
                 Onboarding()
             }else{
-               SimulationView()
-            }
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            }
         }
     }
 }
