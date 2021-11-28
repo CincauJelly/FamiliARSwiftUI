@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		3FBEE887274FEB3F008B8620 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE886274FEB3F008B8620 /* OnboardingModel.swift */; };
 		3FBEE889274FEB54008B8620 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBEE888274FEB54008B8620 /* Onboarding.swift */; };
+		511108EA2753B1AE00A9C1F2 /* ExploreStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108E92753B1AE00A9C1F2 /* ExploreStepView.swift */; };
+		511108EC2753B1EF00A9C1F2 /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108EB2753B1EF00A9C1F2 /* StepModel.swift */; };
+		511108F32753B20E00A9C1F2 /* BeeAndStings.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108ED2753B20D00A9C1F2 /* BeeAndStings.json */; };
+		511108F42753B20E00A9C1F2 /* Choking.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108EE2753B20D00A9C1F2 /* Choking.json */; };
+		511108F52753B20E00A9C1F2 /* Asthma.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108EF2753B20D00A9C1F2 /* Asthma.json */; };
+		511108F62753B20E00A9C1F2 /* Sprain.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108F02753B20D00A9C1F2 /* Sprain.json */; };
+		511108F72753B20E00A9C1F2 /* Puncture.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108F12753B20D00A9C1F2 /* Puncture.json */; };
+		511108F82753B20E00A9C1F2 /* NoseBleed.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108F22753B20E00A9C1F2 /* NoseBleed.json */; };
 		512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E32741FD3D00B1E930 /* ExploreView.swift */; };
 		512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E52741FD5200B1E930 /* ExploreSelections.swift */; };
 		512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066E82741FD8800B1E930 /* ExploreItems.json */; };
@@ -37,12 +45,6 @@
 		87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF55BA273B7418002B245D /* StopWatchManager.swift */; };
 		EC075460274DCB3600B4C910 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07545F274DCB3600B4C910 /* MainNavigationView.swift */; };
 		EC25ACBE2741D27A00480063 /* StepComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25ACBD2741D27A00480063 /* StepComponentView.swift */; };
-		EC25ACC02741D35700480063 /* AsthmaStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25ACBF2741D35700480063 /* AsthmaStepView.swift */; };
-		EC25ACC22741D54100480063 /* NoseBleedStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25ACC12741D54100480063 /* NoseBleedStepView.swift */; };
-		EC25ACC42741D6CF00480063 /* ChokingStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25ACC32741D6CF00480063 /* ChokingStepView.swift */; };
-		EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */; };
-		ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */; };
-		ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B1D4273CB21500130C38 /* SprainStepView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,14 @@
 /* Begin PBXFileReference section */
 		3FBEE886274FEB3F008B8620 /* OnboardingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		3FBEE888274FEB54008B8620 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		511108E92753B1AE00A9C1F2 /* ExploreStepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreStepView.swift; sourceTree = "<group>"; };
+		511108EB2753B1EF00A9C1F2 /* StepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		511108ED2753B20D00A9C1F2 /* BeeAndStings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BeeAndStings.json; sourceTree = "<group>"; };
+		511108EE2753B20D00A9C1F2 /* Choking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Choking.json; sourceTree = "<group>"; };
+		511108EF2753B20D00A9C1F2 /* Asthma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Asthma.json; sourceTree = "<group>"; };
+		511108F02753B20D00A9C1F2 /* Sprain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sprain.json; sourceTree = "<group>"; };
+		511108F12753B20D00A9C1F2 /* Puncture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Puncture.json; sourceTree = "<group>"; };
+		511108F22753B20E00A9C1F2 /* NoseBleed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NoseBleed.json; sourceTree = "<group>"; };
 		512066E32741FD3D00B1E930 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreView.swift; path = Explore/ExploreView.swift; sourceTree = "<group>"; };
 		512066E52741FD5200B1E930 /* ExploreSelections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreSelections.swift; path = Explore/ExploreSelections.swift; sourceTree = "<group>"; };
 		512066E82741FD8800B1E930 /* ExploreItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ExploreItems.json; path = FamiliARSwiftUI/View/Explore/ExploreItems.json; sourceTree = SOURCE_ROOT; };
@@ -98,12 +108,6 @@
 		87BF55BA273B7418002B245D /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
 		EC07545F274DCB3600B4C910 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
 		EC25ACBD2741D27A00480063 /* StepComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepComponentView.swift; sourceTree = "<group>"; };
-		EC25ACBF2741D35700480063 /* AsthmaStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsthmaStepView.swift; sourceTree = "<group>"; };
-		EC25ACC12741D54100480063 /* NoseBleedStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoseBleedStepView.swift; sourceTree = "<group>"; };
-		EC25ACC32741D6CF00480063 /* ChokingStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChokingStepView.swift; sourceTree = "<group>"; };
-		EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAndStingsStepView.swift; sourceTree = "<group>"; };
-		ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureStepView.swift; sourceTree = "<group>"; };
-		ECD3B1D4273CB21500130C38 /* SprainStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprainStepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,12 @@
 		512066E72741FD5C00B1E930 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				511108EF2753B20D00A9C1F2 /* Asthma.json */,
+				511108ED2753B20D00A9C1F2 /* BeeAndStings.json */,
+				511108EE2753B20D00A9C1F2 /* Choking.json */,
+				511108F22753B20E00A9C1F2 /* NoseBleed.json */,
+				511108F12753B20D00A9C1F2 /* Puncture.json */,
+				511108F02753B20D00A9C1F2 /* Sprain.json */,
 				512066E82741FD8800B1E930 /* ExploreItems.json */,
 				512066E92741FD8800B1E930 /* ExploreSteps.json */,
 				512066F02742B38E00B1E930 /* Items.json */,
@@ -146,6 +156,7 @@
 		5123B3002726C24000C91C4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				511108E92753B1AE00A9C1F2 /* ExploreStepView.swift */,
 				3FBEE888274FEB54008B8620 /* Onboarding.swift */,
 				ECD3B1D3273B85A600130C38 /* Component */,
 				512066E32741FD3D00B1E930 /* ExploreView.swift */,
@@ -155,12 +166,6 @@
 				8798CED527367E2A0015526C /* GuidancePage.swift */,
 				8773D941273A320F005165D9 /* PracticeView.swift */,
 				87BF55BA273B7418002B245D /* StopWatchManager.swift */,
-				ECD3B1CF2738D0EF00130C38 /* PunctureStepView.swift */,
-				ECD3B1D4273CB21500130C38 /* SprainStepView.swift */,
-				EC25ACBF2741D35700480063 /* AsthmaStepView.swift */,
-				EC25ACC12741D54100480063 /* NoseBleedStepView.swift */,
-				EC25ACC32741D6CF00480063 /* ChokingStepView.swift */,
-				EC25ACC52741D7DE00480063 /* BeeAndStingsStepView.swift */,
 				EC07545F274DCB3600B4C910 /* MainNavigationView.swift */,
 			);
 			path = View;
@@ -169,6 +174,7 @@
 		5123B30B27270C9700C91C4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				511108EB2753B1EF00A9C1F2 /* StepModel.swift */,
 				512066E72741FD5C00B1E930 /* Data */,
 				512066EC2742029300B1E930 /* Explore.swift */,
 				512066F62742C14C00B1E930 /* Step.swift */,
@@ -376,12 +382,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511108F52753B20E00A9C1F2 /* Asthma.json in Resources */,
 				512066F12742B38E00B1E930 /* Items.json in Resources */,
+				511108F62753B20E00A9C1F2 /* Sprain.json in Resources */,
 				514B33612726A86100FB011D /* Preview Assets.xcassets in Resources */,
 				514B335E2726A86100FB011D /* Assets.xcassets in Resources */,
+				511108F32753B20E00A9C1F2 /* BeeAndStings.json in Resources */,
 				512066F52742BF8E00B1E930 /* Steps.json in Resources */,
+				511108F72753B20E00A9C1F2 /* Puncture.json in Resources */,
 				512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */,
 				512066EB2741FD8800B1E930 /* ExploreSteps.json in Resources */,
+				511108F42753B20E00A9C1F2 /* Choking.json in Resources */,
+				511108F82753B20E00A9C1F2 /* NoseBleed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,25 +418,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD3B1D02738D0EF00130C38 /* PunctureStepView.swift in Sources */,
 				5180A758274358AE00069403 /* HistoryView.swift in Sources */,
 				514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */,
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
-				EC25ACC02741D35700480063 /* AsthmaStepView.swift in Sources */,
+				511108EA2753B1AE00A9C1F2 /* ExploreStepView.swift in Sources */,
 				512066F32742B62800B1E930 /* Bundle-Decodable.swift in Sources */,
-				EC25ACC62741D7DE00480063 /* BeeAndStingsStepView.swift in Sources */,
 				3FBEE889274FEB54008B8620 /* Onboarding.swift in Sources */,
 				512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */,
 				8798CED627367E2A0015526C /* GuidancePage.swift in Sources */,
 				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
+				511108EC2753B1EF00A9C1F2 /* StepModel.swift in Sources */,
 				512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */,
-				EC25ACC42741D6CF00480063 /* ChokingStepView.swift in Sources */,
 				512066F72742C14C00B1E930 /* Step.swift in Sources */,
 				87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */,
-				ECD3B1D5273CB21600130C38 /* SprainStepView.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
-				EC25ACC22741D54100480063 /* NoseBleedStepView.swift in Sources */,
 				8773D942273A320F005165D9 /* PracticeView.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
 				EC25ACBE2741D27A00480063 /* StepComponentView.swift in Sources */,
