@@ -30,10 +30,10 @@ var body: some View {
                         Text("Practice")
                             .padding()
                     }
-                    NavigationLink(destination: ExampleView()){
-                        Text("Testing")
-                            .padding()
-                    }
+//                    NavigationLink(destination: ExampleView()){
+//                        Text("Testing")
+//                            .padding()
+//                    }
                     .navigationTitle(Text("FamiliAR"))
                 }
             }
