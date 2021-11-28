@@ -17,6 +17,8 @@
 		511108F62753B20E00A9C1F2 /* Sprain.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108F02753B20D00A9C1F2 /* Sprain.json */; };
 		511108F72753B20E00A9C1F2 /* Puncture.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108F12753B20D00A9C1F2 /* Puncture.json */; };
 		511108F82753B20E00A9C1F2 /* NoseBleed.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108F22753B20E00A9C1F2 /* NoseBleed.json */; };
+		511108FA2753C9C800A9C1F2 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108F92753C9C800A9C1F2 /* HistoryViewModel.swift */; };
+		511108FC2753C9E000A9C1F2 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108FB2753C9E000A9C1F2 /* HistoryModel.swift */; };
 		512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E32741FD3D00B1E930 /* ExploreView.swift */; };
 		512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E52741FD5200B1E930 /* ExploreSelections.swift */; };
 		512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066E82741FD8800B1E930 /* ExploreItems.json */; };
@@ -75,6 +77,8 @@
 		511108F02753B20D00A9C1F2 /* Sprain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sprain.json; sourceTree = "<group>"; };
 		511108F12753B20D00A9C1F2 /* Puncture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Puncture.json; sourceTree = "<group>"; };
 		511108F22753B20E00A9C1F2 /* NoseBleed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NoseBleed.json; sourceTree = "<group>"; };
+		511108F92753C9C800A9C1F2 /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewModel.swift; path = FamiliARSwiftUI/Model/HistoryViewModel.swift; sourceTree = SOURCE_ROOT; };
+		511108FB2753C9E000A9C1F2 /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		512066E32741FD3D00B1E930 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreView.swift; path = Explore/ExploreView.swift; sourceTree = "<group>"; };
 		512066E52741FD5200B1E930 /* ExploreSelections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreSelections.swift; path = Explore/ExploreSelections.swift; sourceTree = "<group>"; };
 		512066E82741FD8800B1E930 /* ExploreItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ExploreItems.json; path = FamiliARSwiftUI/View/Explore/ExploreItems.json; sourceTree = SOURCE_ROOT; };
@@ -174,6 +178,7 @@
 		5123B30B27270C9700C91C4E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				511108FB2753C9E000A9C1F2 /* HistoryModel.swift */,
 				511108EB2753B1EF00A9C1F2 /* StepModel.swift */,
 				512066E72741FD5C00B1E930 /* Data */,
 				512066EC2742029300B1E930 /* Explore.swift */,
@@ -189,6 +194,7 @@
 		5123B30C27270CA200C91C4E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				511108F92753C9C800A9C1F2 /* HistoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 				511108EA2753B1AE00A9C1F2 /* ExploreStepView.swift in Sources */,
 				512066F32742B62800B1E930 /* Bundle-Decodable.swift in Sources */,
 				3FBEE889274FEB54008B8620 /* Onboarding.swift in Sources */,
+				511108FA2753C9C800A9C1F2 /* HistoryViewModel.swift in Sources */,
 				512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */,
 				8798CED627367E2A0015526C /* GuidancePage.swift in Sources */,
 				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
@@ -433,6 +440,7 @@
 				512066F72742C14C00B1E930 /* Step.swift in Sources */,
 				87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
+				511108FC2753C9E000A9C1F2 /* HistoryModel.swift in Sources */,
 				8773D942273A320F005165D9 /* PracticeView.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
 				EC25ACBE2741D27A00480063 /* StepComponentView.swift in Sources */,
