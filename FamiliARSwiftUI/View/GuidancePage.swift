@@ -86,6 +86,8 @@ struct GuidanceView: View {
                 }
             }
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

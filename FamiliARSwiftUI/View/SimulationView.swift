@@ -197,6 +197,8 @@ struct SimulationView: View {
                 .position(x: 0, y: 380)
                 .frame(width: 50, height: 50, alignment: .center)
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
