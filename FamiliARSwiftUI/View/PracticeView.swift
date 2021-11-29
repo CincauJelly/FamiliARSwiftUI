@@ -35,8 +35,8 @@ struct PracticeView: View {
     var body: some View {
         ZStack{
             
-            RealityKitView()
-                .ignoresSafeArea()
+//            RealityKitView()
+//                .ignoresSafeArea()
             
 //            let finalTime =
             Text(String(format: "%.2f", stopWatchManager.secondsElapsed))

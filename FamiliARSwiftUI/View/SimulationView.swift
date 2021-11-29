@@ -12,16 +12,13 @@ import ARKit
 import FocusEntity
 
 class SceneInit: ObservableObject {
-    @Published var sceneState:Int = 0 {
-        willSet {
-            objectWillChange.send()
-        }
-    }
+    @Published var sceneState:Int = 0
     
 }
 
 struct RealityKitView: UIViewRepresentable {
-    @EnvironmentObject var sceneInit: SceneInit
+//    @EnvironmentObject var sceneInit: SceneInit
+    @Binding var sceneState: Int
     func makeUIView(context: Context) -> ARView {
         let view = ARView()
 
@@ -58,18 +55,23 @@ struct RealityKitView: UIViewRepresentable {
     }
 
     func makeCoordinator() -> Coordinator {
-        Coordinator()
+        Coordinator(state: $sceneState)
     }
 
-    class Coordinator: NSObject, ARSessionDelegate, ObservableObject {
+    class Coordinator:NSObject, ARSessionDelegate {
+        
+        init(state: Binding<Int>) {
+            self._sceneState = state
+        }
         
         weak var view: ARView?
-        @ObservedObject var sceneInit = SceneInit()
+//        @ObservedObject var sceneInit = SceneInit()
+        @Binding var sceneState: Int
         var focusEntity: FocusEntity?
         var skinBurnScene: NewSkinBurn.Scene!
 
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
-            if self.sceneInit.sceneState == 0 {
+            if self.sceneState == 0 {
                 guard let view = self.view else { return }
 //                print("Anchor added to the scene: ", anchors)
                 self.focusEntity = FocusEntity(on: view, style: .classic(color: .yellow))
@@ -78,33 +80,34 @@ struct RealityKitView: UIViewRepresentable {
         }
 
         @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+            
             guard let view = self.view else { return }
-            print(self.sceneInit.sceneState)
-            if self.sceneInit.sceneState == 0 {
-                DispatchQueue.main.async {
+            print(self.sceneState)
+            if self.sceneState == 0 {
+//                DispatchQueue.main.async {
+//                    do {
+//                        let anchor = try NewSkinBurn.loadScene()
+//                        self.skinBurnScene = anchor
+//                        view.scene.addAnchor(anchor)
+//                        self.sceneState = 1
+//                    }
+//                    catch {
+//                        print(error)
+//                    }
+//
+//                }
+                NewSkinBurn.loadSceneAsync(completion: { (result) in
                     do {
                         let anchor = try NewSkinBurn.loadScene()
                         self.skinBurnScene = anchor
                         view.scene.addAnchor(anchor)
-                        self.sceneInit.sceneState = 1
-                    }
-                    catch {
+                        self.sceneState = 1
+                    } catch {
                         print(error)
                     }
-                    
-                }
-//                NewSkinBurn.loadSceneAsync(completion: { (result) in
-//                    do {
-//                        self.skinBurnScene = try result.get()
-//                        view.scene.addAnchor(self.skinBurnScene)
-//                        print("Suksessss")
-//                        self.sceneInit.sceneState += 1
-//                    } catch {
-//                        print(error)
-//                    }
-//                })
-            } else if self.sceneInit.sceneState == 1 {
-                self.sceneInit.sceneState = 2
+                })
+            } else if self.sceneState == 1 {
+                self.sceneState = 2
                 self.skinBurnScene.notifications.startScene1.post()
             } else {
                 if let tapLocation = sender?.location(in: view) {
@@ -116,24 +119,24 @@ struct RealityKitView: UIViewRepresentable {
                             if object.entity.name == "stoveSwitch" {
                                 skinBurnScene.notifications.stoveSwitch.post()
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    self.sceneInit.sceneState = 3
+                                    self.sceneState = 3
                                 }
                             }
-                            else if object.entity.name == "person2" || object.entity.name == "Ground Plane" && self.sceneInit.sceneState == 3{
+                            else if object.entity.name == "person2" || object.entity.name == "Ground Plane" && self.sceneState == 3{
                                 skinBurnScene.notifications.markWound.post()
-                                self.sceneInit.sceneState = 4
+                                self.sceneState = 4
                             }
                             else if object.entity.name == "kran" {
                                 skinBurnScene.notifications.goToSink.post()
-                                self.sceneInit.sceneState = 5
+                                self.sceneState = 5
                             } else if object.entity.name == "clingFilm" {
                                 skinBurnScene.notifications.pickUpCling.post()
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    self.sceneInit.sceneState = 6
+                                    self.sceneState = 6
                                 }
-                            } else if object.entity.name == "person5" || object.entity.name == "Ground Plane" && self.sceneInit.sceneState == 6{
+                            } else if object.entity.name == "person5" || object.entity.name == "Ground Plane" && self.sceneState == 6{
                                 skinBurnScene.notifications.warpCling.post()
-                                self.sceneInit.sceneState = 7
+                                self.sceneState = 7
                             }
                         }
                     }
@@ -165,7 +168,7 @@ struct SimulationView: View {
     var body: some View {
         ZStack{
             
-            RealityKitView()
+            RealityKitView(sceneState: $sceneInit.sceneState)
                 .ignoresSafeArea()
             
             VStack{
@@ -177,10 +180,10 @@ struct SimulationView: View {
                             .padding(8)
                             .foregroundColor(Color.white)
                             .frame(width: 300, alignment: .leading)
-                            .background(i + 1 <= self.sceneInit.sceneState ? Color("Color Primary") : Color.white.opacity(0.6))
+                            .background(i + 3 <= self.sceneInit.sceneState ? Color("Color Primary") : Color.white.opacity(0.6))
                             .cornerRadius(15)
                         Image(systemName: "checkmark.circle.fill")
-                            .foregroundColor(i + 1 <= self.sceneInit.sceneState ? Color("Color Primary") : Color("Color Secondary 2"))
+                            .foregroundColor(i + 3 <= self.sceneInit.sceneState ? Color("Color Primary") : Color("Color Secondary 2"))
                             .frame(width: 50)
                     }
                     .padding(.leading, 12)
@@ -197,8 +200,6 @@ struct SimulationView: View {
                 .position(x: 0, y: 380)
                 .frame(width: 50, height: 50, alignment: .center)
         }
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
     }
 }
 

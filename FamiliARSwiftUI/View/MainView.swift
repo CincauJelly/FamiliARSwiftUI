@@ -14,7 +14,7 @@ struct MainView: View {
     
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             ZStack {
                 SceneView(scene: {
                     let scene = SCNScene(named: "SkinBurn.usdz")!
@@ -48,8 +48,8 @@ struct MainView: View {
                 }
                 .frame(width: screenSize.width * 0.7, height: screenSize.height * 0.7, alignment: .bottom)
             }
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
+//        }
+//        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
