@@ -12,10 +12,10 @@ import ARKit
 import FocusEntity
 
 struct TimerButton: View {
-    
+
     let label: String
     let buttonColor: Color
-    
+
     var body: some View {
         Text(label)
             .foregroundColor(.white)
@@ -38,19 +38,24 @@ struct PracticeView: View {
             RealityKitView()
                 .ignoresSafeArea()
             
-            Text(String(format: "%.1f", stopWatchManager.secondsElapsed))
+//            let finalTime =
+            Text(String(format: "%.2f", stopWatchManager.secondsElapsed))
                 .padding()
                 .background(Color.white.opacity(0.7))
                 .cornerRadius(15)
                 .position(x: 600, y: -350)
                 .frame(width: 100, height: 50, alignment: .leading)
-            
+                .onAppear{
+                    self.stopWatchManager.start()
+                }
+
             Button(action: {
-                self.stopWatchManager.start()
-                
+//                UserDefaults.setValue(finalTime, forKey: "timeInBg")
+                self.stopWatchManager.stop()
+//                print(finalTime)
             })
             {
-                TimerButton(label: "Start", buttonColor: Color("Color Primary"))
+                TimerButton(label: "Stop", buttonColor: Color("Color Primary"))
             }
             
             Image(systemName: "speaker.wave.3.fill")
@@ -61,6 +66,11 @@ struct PracticeView: View {
                 .position(x: 0, y: 330)
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(10)
+            
+            //if udah di scene terakhir, timer di stop and get the data to user default
+//            userDefaults.setValue(finalTime.rounded(), forKey: "timeInBg")
+            
+            
         }
     }
 }

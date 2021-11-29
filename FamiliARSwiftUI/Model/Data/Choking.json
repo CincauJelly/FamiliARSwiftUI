@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "description": "Stand behind the person. Place one foot slightly in front of the other for balance. Wrap your arms around the waist. Tip the person forward slightly. If a child is choking, kneel down behind the child.",
+        "type": "Choking"
+    },
+    {
+        "id": 2,
+        "description": "Make a fist with one hand. Position it slightly above the person's navel.",
+        "type": "Choking"
+    },
+    {
+        "id": 3,
+        "description": "Grasp the fist with the other hand. Press hard into the abdomen with a quick, upward thrust — as if trying to lift the person up.",
+        "type": "Choking"
+    },
+    {
+        "id": 4,
+        "description": "Perform between six and 10 abdominal thrusts until the blockage is dislodged.",
+        "type": "Choking"
+    }
+]
+

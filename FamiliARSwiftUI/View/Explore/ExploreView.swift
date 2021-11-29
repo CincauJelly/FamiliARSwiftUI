@@ -39,6 +39,7 @@ struct ExploreView: View {
                 
             }
             .frame(alignment: .top)
+            .navigationBarBackButtonHidden(true)
         }
         
     }

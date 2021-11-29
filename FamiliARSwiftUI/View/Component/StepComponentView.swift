@@ -13,23 +13,32 @@ struct StepComponentView: View {
     var imageName: String
     var step = ""
     
-    
     var body: some View {
-        VStack {
-            Image("\(imageName)")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 930.0, height: 506.0)
-            Text("\(descrition)")
-                .frame(width: 800)
-                .padding()
-                .foregroundColor(Color(#colorLiteral(red: 255, green: 246, blue: 243, alpha: 1)))
-                .background(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
-                .cornerRadius(10)
-                .opacity(descrition == "" ? 0 : 1)
-        }
-        .navigationBarTitle("\(title)", displayMode: .inline)
-        .offset(y: -60)
+        ZStack {
+            VStack {
+                Text("\(title)")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundColor(Color("Color Secondary 2"))
+                    .background(Color("Color Primary"))
+                    .ignoresSafeArea()
+                HStack {
+                    NavigationLink(destination: ExploreStepView(step: "Puncture"), label: {
+                        Image("explore-nav")
+                            .resizable()
+                            .frame(width: 80, height: 65)
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("Color Primary"))
+                            .padding(100)
+                    })
+                    Spacer()
+                }
+                Spacer()
+            }
+            InnerStepView(descrition: descrition, imageName: imageName)
+            
+        }        
     }
 }
 
@@ -40,7 +49,7 @@ struct PrevNavigationView: View {
             .frame(width: 38, height: 38)
             .scaledToFit()
             .rotationEffect(.radians(.pi))
-            .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+            .foregroundColor(Color("Color Primary"))
     }
 }
 
@@ -50,7 +59,20 @@ struct NextNavigationView: View {
             .resizable()
             .frame(width: 38, height: 38)
             .scaledToFit()
-            .foregroundColor(Color(red: 168 / 255, green: 34 / 255, blue: 61 / 255))
+            .foregroundColor(Color("Color Primary"))
+    }
+}
+
+struct PageTitleView: View {
+    var pageTitle: String
+    var body: some View {
+        Text(pageTitle)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .font(.system(size: 17, weight: .semibold))
+            .foregroundColor(Color("Color Secondary 2"))
+            .background(Color("Color Primary"))
+            .ignoresSafeArea()
     }
 }
 
@@ -58,6 +80,28 @@ struct NextNavigationView: View {
 struct StepComponentView_Previews: PreviewProvider {
     static var previews: some View {
         StepComponentView(title: "Puncture", descrition: "Test", imageName: "Puncture_Step4")
-.previewInterfaceOrientation(.landscapeRight)
+            .previewInterfaceOrientation(.landscapeRight)
+    }
+}
+
+struct InnerStepView: View {
+    var descrition = ""
+    var imageName: String
+    
+    var body: some View {
+        VStack{
+            Image("\(imageName)")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 930.0, height: 300.0)
+                .padding(.bottom, 40)
+            Text("\(descrition)")
+                .frame(width: 800)
+                .padding()
+                .foregroundColor(Color("Color Secondary 2"))
+                .background(Color("Color Primary"))
+                .cornerRadius(10)
+                .opacity(descrition == "" ? 0 : 1)
+        }
     }
 }

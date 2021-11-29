@@ -21,42 +21,42 @@ struct ExploreSelection: View {
     var body: some View {
         switch itemTitle {
         case "Puncture":
-            NavigationLink(destination: PunctureStepView()){
+            NavigationLink(destination: ExploreStepView(step: "Puncture") ){
                 Image(itemImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200, alignment: .center)
             }
         case "Sprain":
-            NavigationLink(destination: SprainStepView()){
+            NavigationLink(destination: ExploreStepView(step: "Sprain")){
                 Image(itemImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200, alignment: .center)
             }
         case "Asthma":
-            NavigationLink(destination: AstmaStepView()){
+            NavigationLink(destination: ExploreStepView(step: "Asthma")){
                 Image(itemImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200, alignment: .center)
             }
         case "NoseBleed":
-            NavigationLink(destination: NoseBleedStepView()){
+            NavigationLink(destination: ExploreStepView(step: "Nose Bleed")){
                 Image(itemImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200, alignment: .center)
             }
         case "Choking":
-            NavigationLink(destination: ChokingStepView()){
+            NavigationLink(destination: ExploreStepView(step: "Choking")){
                 Image(itemImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200, alignment: .center)
             }
         case "BeeStings":
-            NavigationLink(destination: BeeAndStingsStepView()){
+            NavigationLink(destination: ExploreStepView(step: "Bee and Stings")){
                 Image(itemImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)

@@ -1,0 +1,33 @@
+
+[
+    {
+        "id": 1,
+        "description": "Sit upright. Stop whatever you are doing and sit upright. Bending over or lying down can constrict your breathing even more.",
+        "type": "Asthma"
+    },
+    {
+        "id": 2,
+        "description": "Take long, deep breaths. This helps to slow down your breathing and prevent hyperventilation. Breathe in through your nose and breathe out through your mouth.",
+        "type": "Asthma"
+    },
+    {
+        "id": 3,
+        "description": "Shake the inhaler 10 to 15 times before each use. Breathe out all the way. Try to push out as much air as you can. As you start to slowly breathe in through your mouth, press down on the inhaler one time. Keep breathing in slowly, as deeply as you can. Hold your breath as you slowly count to 10. This lets the medicine reach deep into your lungs.",
+        "type": "Asthma"
+    },
+    {
+        "id": 4,
+        "description": "Stay calm. Staying calm may prevent further tightening of your chest muscles and make your breathing easier. The asthma attack could be triggered by dust, cigarette smoke or the smell of chemicals. Get away from the trigger as soon as possible and go to an air-conditioned environment or any place with clean air.",
+        "type": "Asthma"
+    },
+    {
+        "id": 5,
+        "description": "Take a hot caffeinated beverage. Hot caffeinated drinks like coffee can help to open up the airways slightly, providing some relief for an hour or two.",
+        "type": "Asthma"
+    },
+    {
+        "id": 6,
+        "description": "Seek emergency medical help. If the wheezing, coughing and breathing difficulty do not subside after a period of rest, seek immediate medical attention.",
+        "type": "Asthma"
+    }
+]
