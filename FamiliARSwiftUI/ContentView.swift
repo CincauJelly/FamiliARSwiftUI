@@ -35,6 +35,7 @@ var body: some View {
 //                            .padding()
 //                    }
                     .navigationTitle(Text("FamiliAR"))
+                    .foregroundColor(Color("Color Secondary 2"))
                 }
             }
             ExploreView()

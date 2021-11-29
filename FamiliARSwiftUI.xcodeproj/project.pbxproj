@@ -19,6 +19,11 @@
 		511108F82753B20E00A9C1F2 /* NoseBleed.json in Resources */ = {isa = PBXBuildFile; fileRef = 511108F22753B20E00A9C1F2 /* NoseBleed.json */; };
 		511108FA2753C9C800A9C1F2 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108F92753C9C800A9C1F2 /* HistoryViewModel.swift */; };
 		511108FC2753C9E000A9C1F2 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108FB2753C9E000A9C1F2 /* HistoryModel.swift */; };
+		511108FE2754730B00A9C1F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511108FD2754730B00A9C1F2 /* MainView.swift */; };
+		511109012754732500A9C1F2 /* SkinBurn.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 511108FF2754732500A9C1F2 /* SkinBurn.usdz */; };
+		511109022754732500A9C1F2 /* NewSkinBurn.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 511109002754732500A9C1F2 /* NewSkinBurn.rcproject */; };
+		511109042754809B00A9C1F2 /* BtnOptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511109032754809B00A9C1F2 /* BtnOptionComponent.swift */; };
+		51110906275480C400A9C1F2 /* PrimaryButtonComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51110905275480C400A9C1F2 /* PrimaryButtonComp.swift */; };
 		512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E32741FD3D00B1E930 /* ExploreView.swift */; };
 		512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066E52741FD5200B1E930 /* ExploreSelections.swift */; };
 		512066EA2741FD8800B1E930 /* ExploreItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 512066E82741FD8800B1E930 /* ExploreItems.json */; };
@@ -31,7 +36,6 @@
 		512066F72742C14C00B1E930 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F62742C14C00B1E930 /* Step.swift */; };
 		512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512066F82742CE7000B1E930 /* ExampleStep.swift */; };
 		5123B3082727034900C91C4E /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5123B3072727034900C91C4E /* SimulationView.swift */; };
-		5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5123B316272FB00A00C91C4E /* Macro.rcproject */; };
 		5123B357273025A500C91C4E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5123B356273025A500C91C4E /* FocusEntity */; };
 		514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */; };
 		514B335C2726A85F00FB011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514B335B2726A85F00FB011D /* ContentView.swift */; };
@@ -79,6 +83,11 @@
 		511108F22753B20E00A9C1F2 /* NoseBleed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NoseBleed.json; sourceTree = "<group>"; };
 		511108F92753C9C800A9C1F2 /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewModel.swift; path = FamiliARSwiftUI/Model/HistoryViewModel.swift; sourceTree = SOURCE_ROOT; };
 		511108FB2753C9E000A9C1F2 /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		511108FD2754730B00A9C1F2 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		511108FF2754732500A9C1F2 /* SkinBurn.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = SkinBurn.usdz; sourceTree = "<group>"; };
+		511109002754732500A9C1F2 /* NewSkinBurn.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = NewSkinBurn.rcproject; sourceTree = "<group>"; };
+		511109032754809B00A9C1F2 /* BtnOptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnOptionComponent.swift; sourceTree = "<group>"; };
+		51110905275480C400A9C1F2 /* PrimaryButtonComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonComp.swift; sourceTree = "<group>"; };
 		512066E32741FD3D00B1E930 /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreView.swift; path = Explore/ExploreView.swift; sourceTree = "<group>"; };
 		512066E52741FD5200B1E930 /* ExploreSelections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreSelections.swift; path = Explore/ExploreSelections.swift; sourceTree = "<group>"; };
 		512066E82741FD8800B1E930 /* ExploreItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ExploreItems.json; path = FamiliARSwiftUI/View/Explore/ExploreItems.json; sourceTree = SOURCE_ROOT; };
@@ -91,7 +100,6 @@
 		512066F62742C14C00B1E930 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		512066F82742CE7000B1E930 /* ExampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStep.swift; sourceTree = "<group>"; };
 		5123B3072727034900C91C4E /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
-		5123B316272FB00A00C91C4E /* Macro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Macro.rcproject; sourceTree = "<group>"; };
 		514B33562726A85F00FB011D /* FamiliARSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamiliARSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514B33592726A85F00FB011D /* FamiliARSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamiliARSwiftUIApp.swift; sourceTree = "<group>"; };
 		514B335B2726A85F00FB011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,7 +119,7 @@
 		8798CED527367E2A0015526C /* GuidancePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidancePage.swift; sourceTree = "<group>"; };
 		87BF55BA273B7418002B245D /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
 		EC07545F274DCB3600B4C910 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
-		EC25ACBD2741D27A00480063 /* StepComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepComponentView.swift; sourceTree = "<group>"; };
+		EC25ACBD2741D27A00480063 /* StepComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StepComponentView.swift; path = Component/StepComponentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +168,9 @@
 		5123B3002726C24000C91C4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				511108FD2754730B00A9C1F2 /* MainView.swift */,
 				511108E92753B1AE00A9C1F2 /* ExploreStepView.swift */,
-				3FBEE888274FEB54008B8620 /* Onboarding.swift */,
+				EC25ACBD2741D27A00480063 /* StepComponentView.swift */,
 				ECD3B1D3273B85A600130C38 /* Component */,
 				512066E32741FD3D00B1E930 /* ExploreView.swift */,
 				5180A757274358AE00069403 /* HistoryView.swift */,
@@ -202,7 +211,8 @@
 		5123B3132727BA0B00C91C4E /* AssetAR */ = {
 			isa = PBXGroup;
 			children = (
-				5123B316272FB00A00C91C4E /* Macro.rcproject */,
+				511109002754732500A9C1F2 /* NewSkinBurn.rcproject */,
+				511108FF2754732500A9C1F2 /* SkinBurn.usdz */,
 			);
 			path = AssetAR;
 			sourceTree = "<group>";
@@ -274,7 +284,9 @@
 		ECD3B1D3273B85A600130C38 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				EC25ACBD2741D27A00480063 /* StepComponentView.swift */,
+				3FBEE888274FEB54008B8620 /* Onboarding.swift */,
+				511109032754809B00A9C1F2 /* BtnOptionComponent.swift */,
+				51110905275480C400A9C1F2 /* PrimaryButtonComp.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -400,6 +412,7 @@
 				512066EB2741FD8800B1E930 /* ExploreSteps.json in Resources */,
 				511108F42753B20E00A9C1F2 /* Choking.json in Resources */,
 				511108F82753B20E00A9C1F2 /* NoseBleed.json in Resources */,
+				511109012754732500A9C1F2 /* SkinBurn.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +438,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5180A758274358AE00069403 /* HistoryView.swift in Sources */,
+				511108FE2754730B00A9C1F2 /* MainView.swift in Sources */,
 				514B33662726A86100FB011D /* FamiliARSwiftUI.xcdatamodeld in Sources */,
+				511109022754732500A9C1F2 /* NewSkinBurn.rcproject in Sources */,
 				514B33632726A86100FB011D /* Persistence.swift in Sources */,
 				514B335C2726A85F00FB011D /* ContentView.swift in Sources */,
 				511108EA2753B1AE00A9C1F2 /* ExploreStepView.swift in Sources */,
@@ -434,15 +449,16 @@
 				511108FA2753C9C800A9C1F2 /* HistoryViewModel.swift in Sources */,
 				512066E62741FD5200B1E930 /* ExploreSelections.swift in Sources */,
 				8798CED627367E2A0015526C /* GuidancePage.swift in Sources */,
-				5123B317272FB00A00C91C4E /* Macro.rcproject in Sources */,
 				511108EC2753B1EF00A9C1F2 /* StepModel.swift in Sources */,
 				512066F92742CE7000B1E930 /* ExampleStep.swift in Sources */,
 				512066F72742C14C00B1E930 /* Step.swift in Sources */,
 				87BF55BB273B7418002B245D /* StopWatchManager.swift in Sources */,
 				5123B3082727034900C91C4E /* SimulationView.swift in Sources */,
+				511109042754809B00A9C1F2 /* BtnOptionComponent.swift in Sources */,
 				511108FC2753C9E000A9C1F2 /* HistoryModel.swift in Sources */,
 				8773D942273A320F005165D9 /* PracticeView.swift in Sources */,
 				514B335A2726A85F00FB011D /* FamiliARSwiftUIApp.swift in Sources */,
+				51110906275480C400A9C1F2 /* PrimaryButtonComp.swift in Sources */,
 				EC25ACBE2741D27A00480063 /* StepComponentView.swift in Sources */,
 				3FBEE887274FEB3F008B8620 /* OnboardingModel.swift in Sources */,
 				512066E42741FD3D00B1E930 /* ExploreView.swift in Sources */,

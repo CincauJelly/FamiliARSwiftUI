@@ -1,0 +1,57 @@
+[
+  {
+    "libraryIdentifier" : "2ab7c3d039d533ff63a8cee2d1c58990",
+    "format" : "model",
+    "displayName" : "Step3TestWithFurniture.usdz"
+  },
+  {
+    "libraryIdentifier" : "ac59b5d34af4bf02db506f16c891b03e",
+    "format" : "model",
+    "displayName" : "Step1Person_min.usdz"
+  },
+  {
+    "libraryIdentifier" : "d8eb2ce2a1b8a3d95e5c4ddddc47cbe1",
+    "format" : "audio",
+    "displayName" : "Scream.m4a"
+  },
+  {
+    "libraryIdentifier" : "a88c899369947ae9707a49434a031377",
+    "format" : "model",
+    "displayName" : "Step3Person_min.usdz"
+  },
+  {
+    "libraryIdentifier" : "17c1d1859229fb4c275b58e306a2b8ec",
+    "format" : "model",
+    "displayName" : "Kran.usdz"
+  },
+  {
+    "libraryIdentifier" : "d1b3bbae36299bb794adfff07568a576",
+    "format" : "audio",
+    "displayName" : "Water.wav"
+  },
+  {
+    "libraryIdentifier" : "cd09527fae714bf0f07c0c2247eaa4f6",
+    "format" : "model",
+    "displayName" : "Step4Person_min.usdz"
+  },
+  {
+    "libraryIdentifier" : "fbdc4d8f712678ae65a82a79aba1567b",
+    "format" : "model",
+    "displayName" : "ClingFilm.usdz"
+  },
+  {
+    "libraryIdentifier" : "975379100459f622ddef6b5622a8264e",
+    "format" : "model",
+    "displayName" : "Step5Person_min.usdz"
+  },
+  {
+    "libraryIdentifier" : "0538c8a058c9a21a8f612be279295510",
+    "format" : "model",
+    "displayName" : "ClingFilmAttach2.usdz"
+  },
+  {
+    "libraryIdentifier" : "b3e986850eb314f825d305015749ceec",
+    "format" : "audio",
+    "displayName" : "WrapingSFX.m4a"
+  }
+]
