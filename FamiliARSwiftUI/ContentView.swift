@@ -18,7 +18,7 @@ var body: some View {
                 Color("Color Primary")
                     .ignoresSafeArea()
                 ScrollView{
-                    NavigationLink(destination: GuidanceView(states: "learn")){
+                    NavigationLink(destination: MainView()){
                         Text("Learning Simulation")
                             .padding()
                     }
@@ -35,8 +35,8 @@ var body: some View {
 //                            .padding()
 //                    }
                     .navigationTitle(Text("FamiliAR"))
-                    .foregroundColor(Color("Color Secondary 2"))
                 }
+                .foregroundColor(Color("Color Secondary 2"))
             }
             ExploreView()
         }

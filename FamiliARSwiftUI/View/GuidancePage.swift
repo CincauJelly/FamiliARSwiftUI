@@ -57,7 +57,7 @@ struct GuidanceView: View {
 //                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 150))
                     Spacer()
                     if states == "learn"{
-                        NavigationLink(destination: MainView()) {
+                        NavigationLink(destination: SimulationView()) {
                             Text("Continue")
                             .padding()
                             .frame(minWidth: 200, maxWidth: 300)

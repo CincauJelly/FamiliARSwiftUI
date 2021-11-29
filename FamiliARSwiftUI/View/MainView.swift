@@ -26,10 +26,17 @@ struct MainView: View {
                 .ignoresSafeArea()
                 VStack{
                     HStack {
-                        
-                            PrimaryButtonComp(title: "Start Simulation")
+                        NavigationLink("Start Simulation", destination: GuidanceView(states: "learn"))
+                            .frame(width: 279, height: 62)
+                            .background(Color("Color Primary"))
+                            .cornerRadius(50)
+                            .foregroundColor(.white)
+                            .font(.system(size: 18, weight: .bold))
                             .padding(.trailing, 60)
                             .padding(.bottom, 50)
+//                        PrimaryButtonComp(title: "Start Simulation")
+//                        .padding(.trailing, 60)
+//                        .padding(.bottom, 50)
                     }
                     .frame(width: screenSize.width * 0.9 ,alignment: .trailing)
                     HStack {
