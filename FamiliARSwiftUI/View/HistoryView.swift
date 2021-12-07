@@ -4,52 +4,71 @@ import SwiftUI
 struct HistoryView: View {
     @State var menuOpen: Bool = false
     @State private var showingAlert = false
+    @State private var showPopUp: Bool = false
     
     
     init(){
         UITableView.appearance().backgroundColor = .clear
     }
     var body: some View {
-        ZStack{
+        ZStack {
             Color("Color Secondary 2").ignoresSafeArea()
-            Color("Color Primary")
-            VStack(){
-                
-                Text("Learning Records").foregroundColor(.white).padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
-                
-                ScrollView{
-                    
-                    ForEach(HistoryViewModel.init().items) {item in
-                        VStack(){
-                            
-                            HStack(){
-                                Text("\(item.title)\n\(item.date)").foregroundColor(.white).padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
-                                Spacer()
-                                
-                                Text("\(item.duration) minutes").foregroundColor(.white)
-                                    .listRowBackground(Color("Color Primary")).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
-                            }
-                            
+            HStack {
+                VStack {
+                    Button(action: {
+                        withAnimation(.linear(duration: 0.3)) {
+                            showPopUp.toggle()
                         }
-                        Divider()
-                            .background(Color.white)
-                        
-                    }.listRowBackground(Color("Color Primary"))
-                    
+                    }, label: {
+                        Image("menu")
+                            .resizable()
+                            .frame(width: 35, height: 35)
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(Color("Color Primary"))
+                            .padding(20)
+                    })
+                    Spacer()
                 }
                 
-                
+                Spacer()
             }
-        }.cornerRadius(20)
-            .padding(EdgeInsets(top: 0, leading: 20, bottom: 40, trailing: 60))
-
+            ZStack{
+                Color("Color Primary")
+                VStack(){
+                    Text("Learning Records").foregroundColor(.white).padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+                    ScrollView{
+                        ForEach(HistoryViewModel.init().items) {item in
+                            VStack(){
+                                
+                                HStack(){
+                                    Text("\(item.title)\n\(item.date)").foregroundColor(.white).padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
+                                    Spacer()
+                                    
+                                    Text("\(item.duration) minutes").foregroundColor(.white)
+                                        .listRowBackground(Color("Color Primary")).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
+                                }
+                                
+                            }
+                            Divider()
+                                .background(Color.white)
+                        }.listRowBackground(Color("Color Primary"))
+                    }
+                    
+                    
+                }
+            }.cornerRadius(20)
+                .padding(EdgeInsets(top: 60, leading: 60, bottom: 40, trailing: 60))
+            MainNavigationView(page: .practice, show: $showPopUp)
+        }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
         
     }
-    
     func openMenu() {
         self.menuOpen.toggle()
     }
-
+    
 }
 
 

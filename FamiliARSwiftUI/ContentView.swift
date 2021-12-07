@@ -9,46 +9,53 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    
-var body: some View {
-   
-
+    @State private var showPopUp: Bool = false
+    var body: some View {
+        
+        
         NavigationView{
-            ZStack {
-                Color("Color Primary")
-                    .ignoresSafeArea()
-                ScrollView{
-                    NavigationLink(destination: MainView()){
-                        Text("Learning Simulation")
-                            .padding()
-                    }
-                    NavigationLink(destination: ExploreView()){
-                        Text("Explore First Aid")
-                            .padding()
-                    }
-                    NavigationLink(destination: HistoryView()){
-                        Text("Practice")
-                            .padding()
-                    }
-//                    NavigationLink(destination: ExampleView()){
-//                        Text("Testing")
-//                            .padding()
-//                    }
-                    .navigationTitle(Text("FamiliAR"))
-                }
-                .foregroundColor(Color("Color Secondary 2"))
-            }
+            //            ZStack {
+            //                Color("Color Primary")
+            //                    .ignoresSafeArea()
+            //                ScrollView{
+            //                    NavigationLink(destination: MainView()){
+            //                        Text("Learning Simulation")
+            //                            .padding()
+            //                    }
+            //                    NavigationLink(destination: ExploreView()){
+            //                        Text("Explore First Aid")
+            //                            .padding()
+            //                    }
+            //                    NavigationLink(destination: HistoryView()){
+            //                        Text("Practice")
+            //                            .padding()
+            //                    }
+            ////                    NavigationLink(destination: ExampleView()){
+            ////                        Text("Testing")
+            ////                            .padding()
+            ////                    }
+            //                    .navigationTitle(Text("FamiliAR"))
+            //                }
+            //                .foregroundColor(Color("Color Secondary 2"))
+            //            }
+            //            ZStack{
+            //                HStack {
             ExploreView()
+            
+            //                }
+            //            }
         }
-
-//        .foregroundColor(Color("Color Secondary 2"))
+        
+        .navigationViewStyle(StackNavigationViewStyle())
+        //    }
+        //        .foregroundColor(Color("Color Secondary 2"))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-.previewInterfaceOrientation(.landscapeLeft)
-        }
+            .previewInterfaceOrientation(.landscapeLeft)
     }
+}
 

@@ -88,13 +88,15 @@ struct ExploreStepView: View{
                             .frame(width: 80, height: 65)
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color("Color Primary"))
-                            .padding(100)
+                            .padding(50)
                     })
                     Spacer()
                 }
                 Spacer()
             }
         }
+        .navigationBarBackButtonHidden(true)
+        
     }
 }
 
