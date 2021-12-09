@@ -7,10 +7,16 @@
 
 import SwiftUI
 
+enum PageType: String {
+    case explore = "Explore First Aid"
+    case practice = "Practice"
+    case learning = "Learning Simulation"
+}
+
 struct MainNavigationView: View {
-    var page: String
-    //    @Binding var show: Bool
-    var show: Bool
+    var page: PageType
+    @Binding var show: Bool
+
     
     var body: some View {
         
@@ -22,7 +28,7 @@ struct MainNavigationView: View {
                         Spacer()
                         Button(action: {
                             withAnimation(.linear(duration: 0.3)) {
-                                //                            show = false
+                                show = false
                             }
                         }, label: {
                             Image(systemName: "xmark")
@@ -44,14 +50,14 @@ struct MainNavigationView: View {
                             .font(.system(size: 17, weight: .heavy, design: .default))
                     }.padding(.bottom, 20)
                     
-                    NavigationLink(destination: SimulationView()){
-                        OptionView(isActive: page == "Learning Simulation", optionTitle: "Learning Simulation", imageName: "Select Learning", activeImageName: "Unselect Learning")
+                    NavigationLink(destination: MainView()){
+                        OptionView(isActive: page == .learning, optionTitle: "Learning Simulation", imageName: "Select Learning", activeImageName: "Unselect V1 Ar")
                     }
                     NavigationLink(destination: ExploreView()){
-                        OptionView(isActive: page == "Explore First Aid", optionTitle: "Explore First Aid", imageName: "explore first aid select", activeImageName: "ExploreUnselected")
+                        OptionView(isActive: page == .explore, optionTitle: "Explore First Aid", imageName: "explore first aid select", activeImageName: "ExploreUnselected")
                     }
-                    NavigationLink(destination: PracticeView()){
-                        OptionView(isActive: page == "Practice", optionTitle: "Practice", imageName: "practice select", activeImageName: "PracticeUnselected")
+                    NavigationLink(destination: HistoryView()){
+                        OptionView(isActive: page == .practice, optionTitle: "Practice", imageName: "practice select", activeImageName: "PracticeUnselected")
                     }
                     
                 }
@@ -66,9 +72,8 @@ struct MainNavigationView: View {
 }
 
 struct MainNavigationView_Previews: PreviewProvider {
-    //    @Binding private var showPopUp: Bool = projectedValue
     static var previews: some View {
-        MainNavigationView(page: "Practice", show: true)
+        MainNavigationView(page: .learning, show: .constant(true))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

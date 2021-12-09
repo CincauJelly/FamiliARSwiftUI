@@ -11,6 +11,7 @@ import SceneKit
 struct MainView: View {
     @State var selected = "Skin Burn";
     var screenSize = UIScreen.main.bounds
+    @State private var showPopUp: Bool = false
     
     
     var body: some View {
@@ -22,8 +23,27 @@ struct MainView: View {
                     return scene
                 }(), options: [.autoenablesDefaultLighting, .allowsCameraControl])
                 .frame(width: screenSize.width, height: screenSize.height)
-                .padding(.trailing, 30)
+                .padding(0)
                 .ignoresSafeArea()
+                HStack {
+                    VStack {
+                        Button(action: {
+                            withAnimation(.linear(duration: 0.3)) {
+                                showPopUp.toggle()
+                            }
+                        }, label: {
+                            Image("menu")
+                                .resizable()
+                                .frame(width: 35, height: 35)
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(Color("Color Primary"))
+                                .padding(20)
+                        })
+                            Spacer()
+                    }
+                    
+                    Spacer()
+                }.ignoresSafeArea()
                 VStack{
                     HStack {
                         NavigationLink("Start Simulation", destination: GuidanceView(states: "learn"))
@@ -47,7 +67,12 @@ struct MainView: View {
                     }
                 }
                 .frame(width: screenSize.width * 0.7, height: screenSize.height * 0.7, alignment: .bottom)
+                MainNavigationView(page: .learning, show: $showPopUp)
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+        
 //        }
 //        .navigationViewStyle(StackNavigationViewStyle())
     }
