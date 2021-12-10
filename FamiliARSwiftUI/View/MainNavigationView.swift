@@ -40,11 +40,11 @@ struct MainNavigationView: View {
                         
                     }
                     HStack {
-                        Image("App Logo")
+                        Image("app logo")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 40, height: 45)
                             .aspectRatio(contentMode: .fit)
-                        Text("FamilyAR")
+                        Text("FamiliAR")
                             .foregroundColor(Color("Color Primary"))
                             .padding(.horizontal, 10)
                             .font(.system(size: 17, weight: .heavy, design: .default))
