@@ -12,25 +12,32 @@ struct ExploreStepView: View{
     let stepPage: String
     @State var tabPage: String = "1"
     var simulationSteps: [StepModel]
-    
+    let stepSource: String
     
     init(step: String){
         self.stepPage = step
         switch stepPage {
         case "Puncture":
             self.simulationSteps = Bundle.main.decode("Puncture.json")
+            self.stepSource = "Lorem Ipsum 1"
         case "Choking":
             self.simulationSteps = Bundle.main.decode("Choking.json")
+            self.stepSource = "Lorem Ipsum 2"
         case "Nose Bleed":
             self.simulationSteps = Bundle.main.decode("NoseBleed.json")
+            self.stepSource = "Lorem Ipsum 3"
         case "Asthma":
             self.simulationSteps = Bundle.main.decode("Asthma.json")
+            self.stepSource = "Lorem Ipsum 4"
         case "Bee and Stings":
             self.simulationSteps = Bundle.main.decode("BeeAndStings.json")
+            self.stepSource = "Lorem Ipsum 5"
         case "Sprain":
             self.simulationSteps = Bundle.main.decode("Sprain.json")
+            self.stepSource = "Lorem Ipsum 6"
         default:
             self.simulationSteps = Bundle.main.decode("Puncture.json")
+            self.stepSource = "Lorem Ipsum 7"
         }
     }
     
@@ -78,7 +85,10 @@ struct ExploreStepView: View{
                         NextNavigationView()
                             .opacity(Int(self.tabPage)! < simulationSteps.count ? 1 : 0)
                     }
-                }.padding(.bottom, 50)
+                }.padding(.bottom)
+                Text("Source : \(self.stepSource)")
+                    .italic()
+                    .padding(.bottom)
             }
             VStack {
                 HStack {

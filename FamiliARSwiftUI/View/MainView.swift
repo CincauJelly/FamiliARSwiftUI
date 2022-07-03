@@ -61,9 +61,9 @@ struct MainView: View {
                     .frame(width: screenSize.width * 0.9 ,alignment: .trailing)
                     HStack {
                         BtnOptionComponent(title: "Skin Burn", selected: $selected)
-                        BtnOptionComponent(title: "Bycycle Accident", selected: $selected)
-                        BtnOptionComponent(title: "Fall From Stairs", selected: $selected)
-                        BtnOptionComponent(title: "Knife Cuts", selected: $selected)
+//                        BtnOptionComponent(title: "Bycycle Accident", selected: $selected)
+//                        BtnOptionComponent(title: "Fall From Stairs", selected: $selected)
+//                        BtnOptionComponent(title: "Knife Cuts", selected: $selected)
                     }
                 }
                 .frame(width: screenSize.width * 0.7, height: screenSize.height * 0.7, alignment: .bottom)
