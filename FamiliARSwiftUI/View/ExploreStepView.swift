@@ -19,25 +19,25 @@ struct ExploreStepView: View{
         switch stepPage {
         case "Puncture":
             self.simulationSteps = Bundle.main.decode("Puncture.json")
-            self.stepSource = "Lorem Ipsum 1"
+            self.stepSource = "https://www.mayoclinic.org/first-aid/first-aid-puncture-wounds/basics/art-20056665"
         case "Choking":
             self.simulationSteps = Bundle.main.decode("Choking.json")
-            self.stepSource = "Lorem Ipsum 2"
+            self.stepSource = "https://www.mayoclinic.org/first-aid/first-aid-choking/basics/art-20056637"
         case "Nose Bleed":
             self.simulationSteps = Bundle.main.decode("NoseBleed.json")
-            self.stepSource = "Lorem Ipsum 3"
+            self.stepSource = "https://www.mayoclinic.org/first-aid/first-aid-nosebleeds/basics/art-20056683"
         case "Asthma":
             self.simulationSteps = Bundle.main.decode("Asthma.json")
-            self.stepSource = "Lorem Ipsum 4"
+            self.stepSource = "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/asthma-emergency-first-aid"
         case "Bee and Stings":
             self.simulationSteps = Bundle.main.decode("BeeAndStings.json")
-            self.stepSource = "Lorem Ipsum 5"
+            self.stepSource = "https://www.aad.org/public/everyday-care/injured-skin/bites/treat-bee-sting"
         case "Sprain":
             self.simulationSteps = Bundle.main.decode("Sprain.json")
-            self.stepSource = "Lorem Ipsum 6"
+            self.stepSource = "https://www.mayoclinic.org/diseases-conditions/sprained-ankle/diagnosis-treatment/drc-20353231"
         default:
             self.simulationSteps = Bundle.main.decode("Puncture.json")
-            self.stepSource = "Lorem Ipsum 7"
+            self.stepSource = ""
         }
     }
     
